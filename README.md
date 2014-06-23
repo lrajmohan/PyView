@@ -5,6 +5,7 @@ PyView
 I. Setup Notes
 
 Required Libaries
+
 1. pylibnidaqmx (optional on design and simulation mode)
 2. Matplotlob
 3. WxPython
