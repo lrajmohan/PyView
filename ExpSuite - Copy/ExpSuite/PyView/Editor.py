@@ -553,16 +553,16 @@ class CtrlPanel(wx.Panel):
         self.Bind(wx.EVT_TEXT, self.updateRinseTime, self.autoRinseTime)
         self.Bind(wx.EVT_TEXT, self.updateRinseWait, self.autoRinseWait)
         self.SetSizer(ss)
-#raj- updatefreq function-  changes starts
+#raj- updatefreq function-  changes starts - to update the freq list based on the user inputs
     def updateFreq1(self,evt):
             try:
-                d = int(self.freq1.GetValue())
+                d = int(self.freq1.GetValue())  #only numerical freq
                 uv.ToneFreq[0]=d
                 print 'tone freq1',uv.ToneFreq
                  #print "Please enter a numeric Freq."
                  #pass
             except ValueError:
-                print "Please enter a numeric Freq."
+                print "Please enter a numeric Freq." #prompts to enter a numerical freq
     def updateFreq2(self,evt):
             try:
                 d = int(self.freq1.GetValue())
