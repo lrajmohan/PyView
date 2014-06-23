@@ -559,8 +559,6 @@ class CtrlPanel(wx.Panel):
                 d = int(self.freq1.GetValue())  #only numerical freq
                 uv.ToneFreq[0]=d
                 print 'tone freq1',uv.ToneFreq
-                 #print "Please enter a numeric Freq."
-                 #pass
             except ValueError:
                 print "Please enter a numeric Freq." #prompts to enter a numerical freq
     def updateFreq2(self,evt):
@@ -568,8 +566,6 @@ class CtrlPanel(wx.Panel):
                 d = int(self.freq1.GetValue())
                 uv.ToneFreq[0]=d
                 print 'tone freq1',uv.ToneFreq
-                 #print "Please enter a numeric Freq."
-                 #pass
             except ValueError:
                 print "Please enter a numeric Freq."
     def updateFreq3(self,evt):
@@ -577,8 +573,6 @@ class CtrlPanel(wx.Panel):
                 d = int(self.freq1.GetValue())
                 uv.ToneFreq[0]=d
                 print 'tone freq1',uv.ToneFreq
-                 #print "Please enter a numeric Freq."
-                 #pass
             except ValueError:
                 print "Please enter a numeric Freq."
     def updateFreq4(self,evt):
@@ -586,8 +580,6 @@ class CtrlPanel(wx.Panel):
                 d = int(self.freq1.GetValue())
                 uv.ToneFreq[0]=d
                 print 'tone freq1',uv.ToneFreq
-                 #print "Please enter a numeric Freq."
-                 #pass
             except ValueError:
                 print "Please enter a numeric Freq."
 
