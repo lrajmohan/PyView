@@ -29,3 +29,10 @@ III. License Notice: While this is open source code, rights of this project is r
 
 IV. Release Notes
 Baselined: June 2014
+
+ScreenShots:
+#####Editor mode:
+![alt tag](https://raw.githubusercontent.com/lrajmohan/PyView/master/ExpSuite%20-%20Copy/ExpSuite/PyView/screenshots/Editor.jpg)
+
+#####Simulation mode:
+![alt tag](https://raw.githubusercontent.com/lrajmohan/PyView/master/ExpSuite%20-%20Copy/ExpSuite/PyView/screenshots/Pyview.jpg)
