@@ -468,7 +468,7 @@ class CtrlPanel(wx.Panel):
         ss.Add(wx.StaticText(self, -1, "Trial Duration"), row=1, col=1)
         self.input_expDur = wx.TextCtrl(self, id=299, value=str(X.trialDuration), size=(40, -1))
         ss.Add(self.input_expDur, row=1, col=2)
-        
+
         self.autoRinseFlag = wx.CheckBox(self,-1,"Auto Rinse")
         if X.autoRinse:
             self.autoRinseFlag.SetValue(True)
@@ -496,8 +496,8 @@ class CtrlPanel(wx.Panel):
         self.freq2 = wx.TextCtrl(self, size=(40, -1))
         self.freq2.SetValue(str(uv.ToneFreq[1]))
         self.Bind(wx.EVT_TEXT,self.updateFreq2,self.freq2)
-        freqGrid1.AddMany([wx.StaticText(self,-1,"Freq.1"), self.freq1])
-        freqGrid1.AddMany([wx.StaticText(self,-1,"Freq.2"), self.freq2])
+        freqGrid1.AddMany([wx.StaticText(self,-1,"FREQ.1"), self.freq1])
+        freqGrid1.AddMany([wx.StaticText(self,-1,"FREQ.2"), self.freq2])
         ss.Add(freqGrid1,row=1, col=3)
 
         freqGrid2 = wx.GridSizer(2,2,0,0)
@@ -507,8 +507,8 @@ class CtrlPanel(wx.Panel):
         self.freq4 = wx.TextCtrl(self, size=(40, -1))
         self.freq4.SetValue(str(uv.ToneFreq[3]))
         self.Bind(wx.EVT_TEXT,self.updateFreq4,self.freq4)
-        freqGrid2.AddMany([wx.StaticText(self,-1,"Freq.3"), self.freq3])
-        freqGrid2.AddMany([wx.StaticText(self,-1,"Freq.4"), self.freq4])
+        freqGrid2.AddMany([wx.StaticText(self,-1,"FREQ.3"), self.freq3])
+        freqGrid2.AddMany([wx.StaticText(self,-1,"FREQ.4"), self.freq4])
         ss.Add(freqGrid2,row=1, col=4)
 #raj- changes for freq text control  boxes ends (changes ends)
        # ss.Add(wx.StaticText(self, -1, "Freq1:"),row=1,col=3) #raj
