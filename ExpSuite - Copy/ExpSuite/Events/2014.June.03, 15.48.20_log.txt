@@ -1,0 +1,149 @@
+
+Experiment Begins .. Trial Duration: 17.0 seconds
+
+1.2831682965e-06 >>> preCue (Wait Interval) ENTERED 
+0.91 Mark Time 
+
+5.00004234455 >>> tone1 (Tone Interval) ENTERED 
+5.0 Tone 
+7.78 Lever Pressed
+7.78 Taste 
+- - Trial 2 - - 
+
+
+7.79686547649 >>> preCue (Wait Interval) ENTERED 
+
+7.79686547649 >>> preCue (Wait Interval) ENTERED 
+9.28 Mark Time 
+11.03 Lever Pressed
+12.86 Lever Pressed
+14.05 Lever Pressed
+15.06 Mark Time 
+15.9 Mark Time 
+16.74 Mark Time 
+17.51 Mark Time 
+
+17.9458637712 >>> tone1 (Tone Interval) ENTERED 
+17.95 Tone 
+18.42 Mark Time 
+19.97 Mark Time 
+20.76 Mark Time 
+21.97 Mark Time 
+22.93 Mark Time 
+- - Trial 3 - - 
+
+
+22.9493777275 >>> preCue (Wait Interval) ENTERED 
+
+22.9493777275 >>> preCue (Wait Interval) ENTERED 
+25.68 Mark Time 
+26.65 Mark Time 
+
+27.2650769067 >>> tone1 (Tone Interval) ENTERED 
+27.27 Tone 
+27.49 Mark Time 
+28.37 Mark Time 
+- - Trial 4 - - 
+
+
+32.2677696354 >>> preCue (Wait Interval) ENTERED 
+
+32.2677696354 >>> preCue (Wait Interval) ENTERED 
+
+36.8963187185 >>> tone1 (Tone Interval) ENTERED 
+36.9 Tone 
+- - Trial 5 - - 
+
+
+41.8989742353 >>> preCue (Wait Interval) ENTERED 
+
+41.8989742353 >>> preCue (Wait Interval) ENTERED 
+43.05 Lever Pressed
+44.19 Lever Pressed
+44.43 Lever Pressed
+44.77 Lever Pressed
+44.92 Lever Pressed
+45.07 Lever Pressed
+45.19 Lever Pressed
+45.33 Lever Pressed
+45.48 Lever Pressed
+45.79 Lever Pressed
+50.89 Lever Pressed
+
+52.8432949965 >>> tone1 (Tone Interval) ENTERED 
+52.85 Tone 
+53.13 Lever Pressed
+53.13 Taste 
+- - Trial 6 - - 
+
+
+53.1454779224 >>> preCue (Wait Interval) ENTERED 
+
+53.1454779224 >>> preCue (Wait Interval) ENTERED 
+
+58.9215085953 >>> tone1 (Tone Interval) ENTERED 
+58.93 Tone 
+59.18 Mark Time 
+59.97 Lever Pressed
+59.97 Taste 
+- - Trial 7 - - 
+
+
+59.9869129665 >>> preCue (Wait Interval) ENTERED 
+
+59.9869129665 >>> preCue (Wait Interval) ENTERED 
+60.42 Lever Pressed
+61.61 Lever Pressed
+62.33 Lever Pressed
+62.63 Lever Pressed
+63.27 Lever Pressed
+63.5 Lever Pressed
+63.65 Lever Pressed
+63.77 Lever Pressed
+
+71.4867127923 >>> tone1 (Tone Interval) ENTERED 
+71.49 Tone 
+71.66 Lever Pressed
+71.66 Taste 
+- - Trial 8 - - 
+
+
+71.673349621 >>> preCue (Wait Interval) ENTERED 
+
+71.673349621 >>> preCue (Wait Interval) ENTERED 
+
+76.9176622983 >>> tone1 (Tone Interval) ENTERED 
+76.92 Tone 
+77.37 Lever Pressed
+77.37 Taste 
+- - Trial 9 - - 
+
+
+77.3769512178 >>> preCue (Wait Interval) ENTERED 
+
+77.3769512178 >>> preCue (Wait Interval) ENTERED 
+80.78 Lever Pressed
+84.33 Mark Time 
+
+84.5645035871 >>> tone1 (Tone Interval) ENTERED 
+84.57 Tone 
+85.45 Mark Time 
+87.77 Mark Time 
+89.25 Mark Time 
+- - Trial 10 - - 
+
+
+89.5678430326 >>> preCue (Wait Interval) ENTERED 
+
+89.5678430326 >>> preCue (Wait Interval) ENTERED 
+92.39 Mark Time 
+
+93.6818076248 >>> tone1 (Tone Interval) ENTERED 
+93.69 Tone 
+Writing to File Completed.
+
+End of experiment.
+
+Experiment Begins .. Trial Duration: 17.0 seconds
+
+0.00428449894201 >>> preCue (Wait Interval) ENTERED 

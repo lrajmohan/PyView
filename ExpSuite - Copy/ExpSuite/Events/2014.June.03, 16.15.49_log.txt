@@ -1,0 +1,108 @@
+
+Experiment Begins .. Trial Duration: 3.0 seconds
+
+1.2831682965e-06 >>> preSuc (Wait Interval) ENTERED 
+1.53 Mark Time 
+2.0 Taste 
+
+2.00000192475 >>> rinse int. (Wait Interval) ENTERED 
+2.55 Mark Time 
+3.01 Taste 
+- - Trial 2 - - 
+
+
+3.00792933849 >>> preSuc (Wait Interval) ENTERED 
+3.38 Mark Time 
+5.02 Taste 
+
+5.01671262548 >>> rinse int. (Wait Interval) ENTERED 
+5.57 Mark Time 
+6.03 Taste 
+- - Trial 3 - - 
+
+
+6.02554852237 >>> preSuc (Wait Interval) ENTERED 
+6.24 Mark Time 
+7.16 Mark Time 
+8.03 Taste 
+
+8.03442163114 >>> rinse int. (Wait Interval) ENTERED 
+8.8 Mark Time 
+9.04 Taste 
+- - Trial 4 - - 
+
+
+9.04403769435 >>> preSuc (Wait Interval) ENTERED 
+9.79 Mark Time 
+11.06 Taste 
+
+11.0573159199 >>> rinse int. (Wait Interval) ENTERED 
+12.07 Taste 
+- - Trial 5 - - 
+
+
+12.0653203237 >>> preSuc (Wait Interval) ENTERED 
+14.07 Taste 
+
+14.0745790246 >>> rinse int. (Wait Interval) ENTERED 
+Writing to File Completed.
+
+End of experiment.
+
+Experiment Begins .. Trial Duration: 3.0 seconds
+
+0.00442436428634 >>> preSuc (Wait Interval) ENTERED 
+1.62 Mark Time 
+2.0 Taste 
+
+2.00000256634 >>> rinse int. (Wait Interval) ENTERED 
+2.63 Mark Time 
+3.01 Taste 
+- - Trial 2 - - 
+
+
+3.00687585732 >>> preSuc (Wait Interval) ENTERED 
+3.48 Mark Time 
+4.82 Mark Time 
+4.83 Taste 
+
+4.82971009379 >>> rinse int. (Wait Interval) ENTERED 
+5.74 Mark Time 
+6.02 Taste 
+- - Trial 3 - - 
+
+
+6.02109015412 >>> preSuc (Wait Interval) ENTERED 
+6.58 Mark Time 
+7.65 Taste 
+
+7.65489637774 >>> rinse int. (Wait Interval) ENTERED 
+7.82 Mark Time 
+8.17 Taste 
+- - Trial 4 - - 
+
+
+8.54013044689 >>> preSuc (Wait Interval) ENTERED 
+9.0 Mark Time 
+9.85 Mark Time 
+10.42 Taste 
+
+10.4219615537 >>> rinse int. (Wait Interval) ENTERED 
+10.99 Taste 
+- - Trial 5 - - 
+
+
+10.9991184634 >>> preSuc (Wait Interval) ENTERED 
+12.85 Taste 
+
+12.8456566678 >>> rinse int. (Wait Interval) ENTERED 
+12.91 Mark Time 
+13.85 Taste 
+- - Trial 6 - - 
+
+
+13.8474126836 >>> preSuc (Wait Interval) ENTERED 
+14.15 Mark Time 
+15.49 Taste 
+
+15.4934526338 >>> rinse int. (Wait Interval) ENTERED 

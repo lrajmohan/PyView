@@ -1,0 +1,76 @@
+<Experiment>
+	<info>
+		<date>2012.September.12 09.25.37</date>
+		<name>sucrose for OT experiment - 9/12/12</name>
+	</info>
+	<trialDuration>30.5</trialDuration>
+	<autoRinse do="False" for="0.043" wait="0.5" />
+	<terminator />
+	<intervals>
+		<Interval id="0" name="preSuc" type="Wait">
+			<startTime>0</startTime>
+			<duration changable="False" vary="False" varyBy="0.0">0.5</duration>
+			<action>
+				<Lever id="-1" />
+				<Begin id="-1" />
+				<End id="0" />
+			</action>
+		</Interval>
+		<Interval id="1" name="rinse int" type="Wait">
+			<startTime>0.5</startTime>
+			<duration changable="False" vary="False" varyBy="0.0">5.0</duration>
+			<action>
+				<Lever id="-1" />
+				<Begin id="-1" />
+				<End id="1" />
+			</action>
+		</Interval>
+		<Interval id="2" name="wait" type="Wait">
+			<startTime>5.5</startTime>
+			<duration changable="False" vary="False" varyBy="0.0">25.0</duration>
+			<action>
+				<Lever id="-1" />
+				<Begin id="-1" />
+				<End id="-1" />
+			</action>
+		</Interval>
+	</intervals>
+	<actions>
+		<Action id="0" name="Sucrose" type="Taste">
+			<manual>False</manual>
+			<timeConstraints maxTime="0.0" minTime="0.0" />
+			<triggers />
+			<opt runTime="0.043" />
+			<valves>
+				<v>3</v>
+			</valves>
+		</Action>
+		<Action id="1" name="rinse" type="Taste">
+			<manual>False</manual>
+			<timeConstraints maxTime="0.0" minTime="0.0" />
+			<triggers />
+			<opt runTime="0.043" />
+			<valves>
+				<v>0</v>
+			</valves>
+		</Action>
+		<Action id="2" name="manual rinse" type="Taste">
+			<manual>True</manual>
+			<timeConstraints maxTime="0.0" minTime="0.0" />
+			<triggers />
+			<opt runTime="0.043" />
+			<valves>
+				<v>1</v>
+			</valves>
+		</Action>
+		<Action id="3" name="manual sucrose" type="Taste">
+			<manual>True</manual>
+			<timeConstraints maxTime="0.0" minTime="0.0" />
+			<triggers />
+			<opt runTime="0.043" />
+			<valves>
+				<v>3</v>
+			</valves>
+		</Action>
+	</actions>
+</Experiment>

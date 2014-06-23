@@ -1,0 +1,18 @@
+EXPERIMENT DESCRIPTION : checkingnewtrial
+EXPERIMENT FILE : C:\Users\raj\PycharmProjects\pycharm_pyview\ExpSuite - Copy\ExpSuite\PyView\saves\checkingnewtrial.xml 
+Trial Duration = 	22.0
+Intervals Sequence
+preCue = 	5.0 
+tone1 = 	5.0	8000 Hz  
+test = 	5.0 
+
+Actions Detail 
+manual reward Delivery Time = 0.043000 s 
+reward Delivery Time = 0.043000 s 
+
+Experiment Run Summary 
+Total experiment runtime = 23.6335515147
+Trials = 2
+Number of Lever Presses = 11
+Rewards = 1
+Manual Rewards = 0

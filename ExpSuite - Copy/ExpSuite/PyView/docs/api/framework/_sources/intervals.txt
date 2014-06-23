@@ -1,0 +1,14 @@
+Intervals.py
+==================================
+
+Contents:
+
+.. toctree::
+	:maxdepth: 2
+	
+.. automodule:: Intervals
+   :inherited-members:
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

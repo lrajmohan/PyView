@@ -1,0 +1,20 @@
+EXPERIMENT DESCRIPTION : sucrose for OT experiment - 9/12/12
+EXPERIMENT FILE : E:\Google Drive\Workspace\PyView\default_paradigm\sucrose00.xml 
+Trial Duration = 	30.5
+Intervals Sequence
+preSuc = 	0.5 
+rinse int = 	5.0 
+wait = 	25.0 
+
+Actions Detail 
+Sucrose Delivery Time = 0.043000 s 
+rinse Delivery Time = 0.043000 s 
+manual rinse Delivery Time = 0.043000 s 
+manual sucrose Delivery Time = 0.043000 s 
+
+ Experiment Run Summary 
+Total experiment runtime = 3557.29269167
+Trials = 117
+Number of Lever Presses = 0
+Rewards = 234
+Manual Rewards = 0

@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Introduction to PyView</title>
+</head>
+<body>
+<h1>1. Experiment Framework</h1>
+
+<h2>Intervals</h2>
+<p> Intervals are blocks of time during the experiment. The type of interval determines the types of actions that may occur in that time. Types of interval include: </p>
+	<ul>
+	<li><b>Nogo</b> At the end of this interval a reward is given, only if the lever was never pressed during this interval </li>
+	<li><b>Reward</b> If a lever is pressed during this interval, one of the active valves will deliver water.</li>
+	<li><b>Tone</b> A tone is played throughout the duration of this interval. 
+		At the start of this interval the associated valves are also opened. 
+		<i><font color="#ff0000">Note: In the Stony Brook PyView implementation, we should not associate any actions
+			 as the Begin-action for Tone Intervals, because that gets linked to PlayTone action at the start of experiment runtime
+		 </font></i></li>
+	<li><b>Wait</b> During a wait nothing happens. No lever press are rewarded or tone delievered. Ex: ITI</li>
+	</ul>
+<p>To read more about intervals, read the <a href="api/framework/intervals.html">AP for Intervals</a></p>
+
+<h2>Actions</h2>
+<p>Actions are program control functions. They can be performed by: <br/>
+	user manually triggering <br />
+	upon <i>start</i>, <i>end</i>, or <i>lever press</i> in an interval <br />
+	automatically triggered by another action
+</p>
+
+<p>There are the following subclasses of Actions:</p>
+<ul>
+	<li><b>Change Interval Duration</b> changes the duration of an interval by an additive or multiplicative constant.</li>
+	<li><b>Jump</b> moves interval pointer to another interval</li>
+	<li><b>Play Tone</b> is not an active action in the experiment paradigm. It is used during our particular PyView implementation to attach to the begin action of any Tone intervals. </li>
+	<li><b>Taste</b> Delivers taste to experiment subject. </li> 
+</ul>
+
+<h2>Conditions</h2>
+<p>A condition or a grouping of conditions that about the conditions of the experiment during runtime. <br />
+	An End Condition takes no other conditions to be its children conditions in the condition tree. They normally directly tell us something about the experiment run. It's truth value is independent of  other conditions<br />
+	A Clause condtion takes one or two children conditions. The truth value it returns is dependent on its children conditions.
+</p>
+
+<img src="img_condy.png">
+
+<p>To find out more about what each condition class is view the <a href="api/framework/conditions.html">Conditions document</a></p>
+
+<h1>II. Stony Brook Neurology Lab Implementation</h1>
+<h2>Library packages</h2>
+<ul>
+	<li><b>framework</b> contains abstract experiment paradigm structure. See Experiment Framework for more info.</li>
+	<li><b>libnidaqmx</b> National Intruments card driver library. Made by <a href="https://code.google.com/p/pylibnidaqmx/">Pearu Peterson</a></li>
+	
+</ul>
+<h2>Files</h2>
+<ul>
+	<li><b>CondTree</b> module used to build and maintain the conditions tree used in several parts of the Editor</li>
+	<li><b>Editor</b> is the graphical user interface (GUI) used to create and edit the XML experiment paradigm files</li>
+	<li><b>gui</b> module containing the sub panels in PyView</li>
+	<li><b>neuroconnect</b>module where all the hardware (NI card) control functions reside</li>
+	<li><b>PyView</b> main experiment execution program</li>
+	<li><b>test_tone</b>test tone scripts (command line)</li>
+	<li><b>ToneControl</b>test tone script (GUI)</li>
+	<li><b>uservars</b> list of global variables and functions. Most of them deal with the names and colors of things</li>
+</ul>
+
+</body>
+</html>

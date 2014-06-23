@@ -1,0 +1,13 @@
+You will probably want to connect it to one of your digital inputs (depending on what is written in your code).
+
+The digital inputs are normally pulled high. Meaning they are pulled up to 5V (a digital 1) if nothing is connected to them. 
+
+So you want to connect one side of your switch to ground (black wire) and the other side to the signal (white wire) of your pwm cable that is connecting to your digital input. 
+
+There should be a normally open and a normally closed pin on your limit switch. If in your programming you want the switch to be low (digital 0) most of the time except when it is pressed, then you want to connect the signal pin to the normally closed part of the limit switch. 
+
+If however you want to have your switch high (1) most of the time except when you press it. Then you want to connect the signal wire to the normally open pin. Ground should be connected to the COM (common pin on the switch).
+
+The normally closed pin is, as it's name implies, a pin that is normally closed (connected) to your COM pin. Which in this case is ground. When you press the switch the connection opens and the signal wire is no longer connected to anything. So it is pulled high internally by the robot controller.
+
+The normally open pin, is the opposite. It is normally not connected to COM, except when the switch is pressed.

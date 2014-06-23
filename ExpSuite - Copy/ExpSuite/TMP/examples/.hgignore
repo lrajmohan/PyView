@@ -1,0 +1,6 @@
+glob:*.log
+glob:.svn
+glob:*.pyc
+glob:*~
+glob:build
+glob:apidocs*

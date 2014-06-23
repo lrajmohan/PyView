@@ -1,0 +1,17 @@
+EXPERIMENT DESCRIPTION : demo2
+EXPERIMENT FILE : C:\Users\raj\PycharmProjects\pycharm_pyview\ExpSuite - Copy\ExpSuite\PyView\saves\test1.xml 
+Trial Duration = 	17.0
+Intervals Sequence
+preCue = 	10.606651887 
+tone1 = 	5.0	8000 Hz  
+
+Actions Detail 
+manual reward Delivery Time = 0.043000 s 
+reward Delivery Time = 0.043000 s 
+
+Experiment Run Summary 
+Total experiment runtime = 4.74901420596
+Trials = 1
+Number of Lever Presses = 1
+Rewards = 0
+Manual Rewards = 0

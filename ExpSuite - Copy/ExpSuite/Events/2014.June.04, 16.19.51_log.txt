@@ -1,0 +1,18 @@
+
+Experiment Begins .. Trial Duration: 3.5 seconds
+
+1.2831682965e-06 >>> preSuc (Wait Interval) ENTERED 
+1.53 Mark Time 
+2.0 Taste 
+
+2.00000064158 >>> rinse int. (Wait Interval) ENTERED 
+2.33 Lever Pressed
+3.01 Taste 
+
+3.00826745333 >>> end interval (Wait Interval) ENTERED 
+- - Trial 2 - - 
+
+
+3.51599469282 >>> preSuc (Wait Interval) ENTERED 
+
+3.51599469282 >>> preSuc (Wait Interval) ENTERED 

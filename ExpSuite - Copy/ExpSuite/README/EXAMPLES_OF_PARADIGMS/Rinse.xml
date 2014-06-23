@@ -1,0 +1,43 @@
+<Experiment>
+	<info>
+		<date>2012.August.17 15.21.05</date>
+		<name>Rinse</name>
+	</info>
+	<trialDuration>30.0</trialDuration>
+	<autoRinse do="False" for="0.043" wait="5.0" />
+	<terminator />
+	<intervals>
+		<Interval id="0" name="clear interval" type="Wait">
+			<startTime>0.0</startTime>
+			<duration changable="False" vary="False" varyBy="0.0">30.0</duration>
+			<action>
+				<Lever id="-1" />
+				<Begin id="-1" />
+				<End id="-1" />
+			</action>
+		</Interval>
+	</intervals>
+	<actions>
+		<Action id="0" name="Restart" type="Jump">
+			<manual>False</manual>
+			<timeConstraints maxTime="0.0" minTime="0.0" />
+			<triggers />
+			<jumper>
+				<jump prob="1.0" to="0" />
+			</jumper>
+			<opt newTrial="True" />
+			<condition>
+				<null />
+			</condition>
+		</Action>
+		<Action id="1" name="Rinse" type="Taste">
+			<manual>True</manual>
+			<timeConstraints maxTime="0.0" minTime="0.0" />
+			<triggers />
+			<opt runTime="0.043" />
+			<valves>
+				<v>0</v>
+			</valves>
+		</Action>
+	</actions>
+</Experiment>

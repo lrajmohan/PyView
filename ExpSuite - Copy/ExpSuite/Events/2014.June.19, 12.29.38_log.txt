@@ -1,0 +1,32 @@
+
+Experiment Begins .. Trial Duration: 9.0 seconds
+
+1.2831682965e-06 >>> Interval0 (Tone Interval) ENTERED 
+0.01 Tone 
+
+1.00000962376 >>> Interval1 (Wait Interval) ENTERED 
+
+2.00426268508 >>> Interval2 (Tone Interval) ENTERED 
+2.01 Tone 
+
+3.00832391274 >>> Interval3 (Wait Interval) ENTERED 
+
+4.01151386912 >>> Interval4 (Tone Interval) ENTERED 
+4.02 Tone 
+
+5.01541213441 >>> Interval5 (Wait Interval) ENTERED 
+
+6.01814143338 >>> Interval6 (Tone Interval) ENTERED 
+6.03 Tone 
+
+7.02198067292 >>> Interval7 (Wait Interval) ENTERED 
+
+8.02570121939 >>> Interval8 (Tone Interval) ENTERED 
+8.03 Tone 
+- - Trial 2 - - 
+
+
+9.02979067676 >>> Interval0 (Tone Interval) ENTERED 
+9.04 Tone 
+
+10.0324744232 >>> Interval1 (Wait Interval) ENTERED 

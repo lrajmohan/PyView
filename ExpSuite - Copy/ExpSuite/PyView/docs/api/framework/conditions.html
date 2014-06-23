@@ -1,0 +1,699 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Conditions.py &mdash; PyView framework alpha documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="PyView framework alpha documentation" href="index.html" />
+    <link rel="prev" title="Actions.py" href="actions.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="actions.html" title="Actions.py"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyView framework alpha documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="conditions-py">
+<h1>Conditions.py<a class="headerlink" href="#conditions-py" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-Conditions"></span><dl class="class">
+<dt id="Conditions.Andy">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Andy</tt><big>(</big><em>c1=None</em>, <em>c2=None</em><big>)</big><a class="headerlink" href="#Conditions.Andy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is True only if both of its children evaluate as true</p>
+<dl class="method">
+<dt id="Conditions.Andy.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Andy.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Andy.setNull">
+<tt class="descname">setNull</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Andy.setNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>set children to be NullCon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Andy.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Andy.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true only if both c1 and c2 are true, false otherwise</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Andy.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Andy.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;and&gt; and runs toXml() on its children</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.BiasRandom">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">BiasRandom</tt><big>(</big><em>limit=0.5</em><big>)</big><a class="headerlink" href="#Conditions.BiasRandom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decided on whether or not we return true
+by some random biased. if limit=0.5 then fair toss</p>
+<dl class="method">
+<dt id="Conditions.BiasRandom.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.BiasRandom.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.BiasRandom.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.BiasRandom.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if random number is less than limit,
+otherwise returns False</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.BiasRandom.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.BiasRandom.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;random limit=&#8217;(float)&#8217;&gt;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Bik">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Bik</tt><big>(</big><em>c1</em>, <em>c2</em><big>)</big><a class="headerlink" href="#Conditions.Bik" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes two condition properties (has two children)</p>
+<dl class="method">
+<dt id="Conditions.Bik.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Bik.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Bik.setNull">
+<tt class="descname">setNull</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Bik.setNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>set children to be NullCon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Bik.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Bik.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if its true or false</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd><dl class="first last docutils">
+<dt>p contains experiment time, number of rewards, number of trials, </dt>
+<dd>number of consecutively correct trials</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Bik.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Bik.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Bik.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Bik.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.ConRwLimit">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">ConRwLimit</tt><big>(</big><em>limit=0</em><big>)</big><a class="headerlink" href="#Conditions.ConRwLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>stops after the number of consecutively correct trials is performed</p>
+<dl class="method">
+<dt id="Conditions.ConRwLimit.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.ConRwLimit.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.ConRwLimit.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.ConRwLimit.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if number of consecutive rewards exceeds or reaches limit</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.ConRwLimit.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.ConRwLimit.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;cc limit=&#8217;(int)&#8217;&gt;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Condition">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Condition</tt><a class="headerlink" href="#Conditions.Condition" title="Permalink to this definition">¶</a></dt>
+<dd><p>General class for a Condition</p>
+<dl class="attribute">
+<dt id="Conditions.Condition.flag">
+<tt class="descname">flag</tt><em class="property"> = None</em><a class="headerlink" href="#Conditions.Condition.flag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluated truth value of condition</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Conditions.Condition.leaf">
+<tt class="descname">leaf</tt><em class="property"> = None</em><a class="headerlink" href="#Conditions.Condition.leaf" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if as no children, False otherwise</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Condition.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Condition.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Conditions.Condition.parent">
+<tt class="descname">parent</tt><em class="property"> = None</em><a class="headerlink" href="#Conditions.Condition.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>the node linked to this node directly</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Conditions.Condition.place">
+<tt class="descname">place</tt><em class="property"> = None</em><a class="headerlink" href="#Conditions.Condition.place" title="Permalink to this definition">¶</a></dt>
+<dd><p>index of which child link to change in its parent</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Condition.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Condition.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if its true or false</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd><dl class="first last docutils">
+<dt>p contains experiment time, number of rewards, number of trials, </dt>
+<dd>number of consecutively correct trials</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Condition.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Condition.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Condition.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Condition.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Conditions.Condition.type">
+<tt class="descname">type</tt><em class="property"> = None</em><a class="headerlink" href="#Conditions.Condition.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>type of condition</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Ender">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Ender</tt><a class="headerlink" href="#Conditions.Ender" title="Permalink to this definition">¶</a></dt>
+<dd><p>Superclass for End conditions</p>
+<dl class="method">
+<dt id="Conditions.Ender.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Ender.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Ender.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Ender.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if its true or false</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd><dl class="first last docutils">
+<dt>p contains experiment time, number of rewards, number of trials, </dt>
+<dd>number of consecutively correct trials</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Ender.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Ender.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Ender.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Ender.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Floater">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Floater</tt><big>(</big><em>limit=0.0</em><big>)</big><a class="headerlink" href="#Conditions.Floater" title="Permalink to this definition">¶</a></dt>
+<dd><p>A Floater node where the limit is a float</p>
+<dl class="method">
+<dt id="Conditions.Floater.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Floater.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Floater.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Floater.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if its true or false</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd><dl class="first last docutils">
+<dt>p contains experiment time, number of rewards, number of trials, </dt>
+<dd>number of consecutively correct trials</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Floater.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Floater.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Floater.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Floater.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Inter">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Inter</tt><big>(</big><em>limit=0</em><big>)</big><a class="headerlink" href="#Conditions.Inter" title="Permalink to this definition">¶</a></dt>
+<dd><p>An Inter node where the limit is an int</p>
+<dl class="method">
+<dt id="Conditions.Inter.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Inter.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Inter.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Inter.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if its true or false</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd><dl class="first last docutils">
+<dt>p contains experiment time, number of rewards, number of trials, </dt>
+<dd>number of consecutively correct trials</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Inter.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Inter.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Inter.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Inter.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Klaus">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Klaus</tt><a class="headerlink" href="#Conditions.Klaus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Superclass for Not, And, Or, Xor type condition connectors</p>
+<dl class="method">
+<dt id="Conditions.Klaus.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Klaus.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Klaus.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Klaus.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if its true or false</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd><dl class="first last docutils">
+<dt>p contains experiment time, number of rewards, number of trials, </dt>
+<dd>number of consecutively correct trials</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Klaus.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Klaus.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Klaus.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Klaus.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Noty">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Noty</tt><big>(</big><em>c1=None</em><big>)</big><a class="headerlink" href="#Conditions.Noty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Not condition reverse the results of the test on child condition</p>
+<dl class="method">
+<dt id="Conditions.Noty.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Noty.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Noty.setNull">
+<tt class="descname">setNull</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Noty.setNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set child to be NullCon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Noty.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Noty.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return false if evaluative c1 is true, and vice versa</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Noty.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Noty.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;not&gt; and runs toXml() on c1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.NullCon">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">NullCon</tt><a class="headerlink" href="#Conditions.NullCon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Null Condition is a place holder condition.
+It always return True upon calling its test method</p>
+<dl class="method">
+<dt id="Conditions.NullCon.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.NullCon.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.NullCon.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.NullCon.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.NullCon.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.NullCon.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;null&gt;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Ory">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Ory</tt><big>(</big><em>c1=None</em>, <em>c2=None</em><big>)</big><a class="headerlink" href="#Conditions.Ory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is True if either one of its children returns True</p>
+<dl class="method">
+<dt id="Conditions.Ory.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Ory.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Ory.setNull">
+<tt class="descname">setNull</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Ory.setNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>set children to be NullCon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Ory.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Ory.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if c1 or c2 is true, False if they are both false</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Ory.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Ory.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;or&gt; and runs toXml() on its children</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.RewardsLimit">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">RewardsLimit</tt><big>(</big><em>limit=0</em><big>)</big><a class="headerlink" href="#Conditions.RewardsLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>stops after the number of rewards given exeeds the limit</p>
+<dl class="method">
+<dt id="Conditions.RewardsLimit.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.RewardsLimit.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.RewardsLimit.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.RewardsLimit.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if number of rewards given reaches or exceeds limit</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.RewardsLimit.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.RewardsLimit.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;rewards limit=&#8217;(int)&#8217;&gt;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.TimeLimit">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">TimeLimit</tt><big>(</big><em>limit=0.0</em><big>)</big><a class="headerlink" href="#Conditions.TimeLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>stop if experiment time exceeds limit</p>
+<dl class="method">
+<dt id="Conditions.TimeLimit.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.TimeLimit.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.TimeLimit.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.TimeLimit.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if experiment time exceeds limit</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.TimeLimit.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.TimeLimit.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;time limit=&#8217;(float)&#8217;&gt;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.TrialsLimit">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">TrialsLimit</tt><big>(</big><em>limit=0</em><big>)</big><a class="headerlink" href="#Conditions.TrialsLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>stops after performing a certain number of trials</p>
+<dl class="method">
+<dt id="Conditions.TrialsLimit.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.TrialsLimit.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.TrialsLimit.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.TrialsLimit.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if we exceeds trials limit</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.TrialsLimit.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.TrialsLimit.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;trials limit=&#8217;(int)&#8217;&gt;</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Unik">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Unik</tt><big>(</big><em>c1</em><big>)</big><a class="headerlink" href="#Conditions.Unik" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes one condition properly (has one child)</p>
+<dl class="method">
+<dt id="Conditions.Unik.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Unik.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Unik.setNull">
+<tt class="descname">setNull</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Unik.setNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set child to be NullCon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Unik.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Unik.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return if its true or false</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd><dl class="first last docutils">
+<dt>p contains experiment time, number of rewards, number of trials, </dt>
+<dd>number of consecutively correct trials</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Unik.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Unik.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Unik.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Unik.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>general function, to be redefined later by subclasses</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Conditions.Xory">
+<em class="property">class </em><tt class="descclassname">Conditions.</tt><tt class="descname">Xory</tt><big>(</big><em>c1=None</em>, <em>c2=None</em><big>)</big><a class="headerlink" href="#Conditions.Xory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is True if only one of its children is True</p>
+<dl class="method">
+<dt id="Conditions.Xory.morph">
+<tt class="descname">morph</tt><big>(</big><em>state</em><big>)</big><a class="headerlink" href="#Conditions.Xory.morph" title="Permalink to this definition">¶</a></dt>
+<dd><p>make this node&#8217;s parent&#8217;s child flag link to this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Xory.setNull">
+<tt class="descname">setNull</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Xory.setNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>set children to be NullCon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Xory.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Conditions.Xory.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return true if either c1 is true and c2 is false, or c1 is false and c2 is true</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Conditions.Xory.toXml">
+<tt class="descname">toXml</tt><big>(</big><big>)</big><a class="headerlink" href="#Conditions.Xory.toXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns &lt;xor&gt; and runs toXml() on its children</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="Conditions.parseXml">
+<tt class="descclassname">Conditions.</tt><tt class="descname">parseXml</tt><big>(</big><em>node</em><big>)</big><a class="headerlink" href="#Conditions.parseXml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds Conditional tree from XML tree</p>
+</dd></dl>
+
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="actions.html"
+                        title="previous chapter">Actions.py</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/conditions.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="actions.html" title="Actions.py"
+             >previous</a> |</li>
+        <li><a href="index.html">PyView framework alpha documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Alice Q. Wong.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

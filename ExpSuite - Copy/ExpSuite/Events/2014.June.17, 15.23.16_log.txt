@@ -1,0 +1,98 @@
+
+Experiment Begins .. Trial Duration: 6.0 seconds
+
+1.2831682965e-06 >>> Interval0 (Tone Interval) ENTERED 
+0.01 Tone 
+0.99 Mark Time 
+1.9 Mark Time 
+
+2.0000038495 >>> Interval1 (Wait Interval) ENTERED 
+2.76 Mark Time 
+
+3.00408175835 >>> Interval2 (Tone Interval) ENTERED 
+3.01 Tone 
+3.84 Mark Time 
+5.28 Mark Time 
+- - Trial 2 - - 
+
+
+6.00779396423 >>> Interval0 (Tone Interval) ENTERED 
+6.02 Tone 
+6.35 Mark Time 
+7.57 Mark Time 
+
+8.01023070083 >>> Interval1 (Wait Interval) ENTERED 
+8.87 Mark Time 
+
+9.01400963146 >>> Interval2 (Tone Interval) ENTERED 
+9.03 Tone 
+9.72 Mark Time 
+Writing to File Completed.
+
+End of experiment.
+
+Experiment Begins .. Trial Duration: 9.0 seconds
+
+0.022465068951 >>> Interval0 (Tone Interval) ENTERED 
+0.03 Tone 
+
+1.00000449109 >>> Interval1 (Wait Interval) ENTERED 
+
+2.0030071049 >>> Interval2 (Tone Interval) ENTERED 
+2.01 Tone 
+2.26 Mark Time 
+
+3.00611493852 >>> Interval3 (Wait Interval) ENTERED 
+3.06 Mark Time 
+
+4.00940049094 >>> Interval4 (Tone Interval) ENTERED 
+4.02 Tone 
+4.05 Mark Time 
+4.97 Mark Time 
+
+5.01256285921 >>> Interval5 (Wait Interval) ENTERED 
+
+6.01607360767 >>> Interval6 (Tone Interval) ENTERED 
+6.02 Tone 
+6.06 Mark Time 
+6.76 Mark Time 
+
+7.01945283137 >>> Interval7 (Wait Interval) ENTERED 
+7.52 Mark Time 
+
+8.02348903725 >>> Interval8 (Tone Interval) ENTERED 
+8.03 Tone 
+8.2 Mark Time 
+8.98 Mark Time 
+- - Trial 2 - - 
+
+
+9.0265590174 >>> Interval0 (Tone Interval) ENTERED 
+9.05 Tone 
+9.75 Mark Time 
+
+10.0326149302 >>> Interval1 (Wait Interval) ENTERED 
+10.63 Mark Time 
+
+11.0357195559 >>> Interval2 (Tone Interval) ENTERED 
+11.05 Tone 
+11.32 Mark Time 
+
+12.0389018132 >>> Interval3 (Wait Interval) ENTERED 
+12.48 Mark Time 
+
+13.0434275478 >>> Interval4 (Tone Interval) ENTERED 
+13.05 Tone 
+
+14.0466168626 >>> Interval5 (Wait Interval) ENTERED 
+14.18 Mark Time 
+
+15.0499928784 >>> Interval6 (Tone Interval) ENTERED 
+15.07 Tone 
+15.48 Mark Time 
+
+16.0531462645 >>> Interval7 (Wait Interval) ENTERED 
+16.5 Mark Time 
+
+17.0560590565 >>> Interval8 (Tone Interval) ENTERED 
+17.06 Tone 

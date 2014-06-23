@@ -1,0 +1,92 @@
+
+Experiment Begins .. Trial Duration: 9.0 seconds
+
+1.92475244476e-06 >>> Interval0 (Tone Interval) ENTERED 
+0.01 Tone 
+
+1.0000160396 >>> Interval1 (Wait Interval) ENTERED 
+
+2.0031206653 >>> Interval2 (Tone Interval) ENTERED 
+2.01 Tone 
+
+3.00574474446 >>> Interval3 (Wait Interval) ENTERED 
+
+4.00842528303 >>> Interval4 (Tone Interval) ENTERED 
+4.01 Tone 
+
+5.01093387705 >>> Interval5 (Wait Interval) ENTERED 
+
+6.01465314036 >>> Interval6 (Tone Interval) ENTERED 
+6.02 Tone 
+
+7.01781165912 >>> Interval7 (Wait Interval) ENTERED 
+
+8.02019193631 >>> Interval8 (Tone Interval) ENTERED 
+8.02 Tone 
+- - Trial 2 - - 
+
+
+9.0229488234 >>> Interval0 (Tone Interval) ENTERED 
+9.04 Tone 
+
+10.0255196511 >>> Interval1 (Wait Interval) ENTERED 
+
+11.028122558 >>> Interval2 (Tone Interval) ENTERED 
+11.03 Tone 
+
+12.0306260193 >>> Interval3 (Wait Interval) ENTERED 
+
+13.033948142 >>> Interval4 (Tone Interval) ENTERED 
+13.04 Tone 
+
+14.0373132509 >>> Interval5 (Wait Interval) ENTERED 
+
+15.042537029 >>> Interval6 (Tone Interval) ENTERED 
+15.06 Tone 
+
+16.0455133379 >>> Interval7 (Wait Interval) ENTERED 
+
+17.0482952468 >>> Interval8 (Tone Interval) ENTERED 
+17.05 Tone 
+- - Trial 3 - - 
+
+
+18.0517020586 >>> Interval0 (Tone Interval) ENTERED 
+18.06 Tone 
+
+19.0542459397 >>> Interval1 (Wait Interval) ENTERED 
+
+20.0571959436 >>> Interval2 (Tone Interval) ENTERED 
+20.06 Tone 
+
+21.0599079198 >>> Interval3 (Wait Interval) ENTERED 
+
+22.0623574881 >>> Interval4 (Tone Interval) ENTERED 
+22.07 Tone 
+
+23.0649950406 >>> Interval5 (Wait Interval) ENTERED 
+
+24.0683492425 >>> Interval6 (Tone Interval) ENTERED 
+24.07 Tone 
+
+25.0709136543 >>> Interval7 (Wait Interval) ENTERED 
+
+26.0733253691 >>> Interval8 (Tone Interval) ENTERED 
+26.08 Tone 
+- - Trial 4 - - 
+
+
+27.0760405533 >>> Interval0 (Tone Interval) ENTERED 
+27.09 Tone 
+
+28.0786723314 >>> Interval1 (Wait Interval) ENTERED 
+
+29.0817140819 >>> Interval2 (Tone Interval) ENTERED 
+29.08 Tone 
+
+30.0840276343 >>> Interval3 (Wait Interval) ENTERED 
+
+31.086785163 >>> Interval4 (Tone Interval) ENTERED 
+31.09 Tone 
+
+32.0892482045 >>> Interval5 (Wait Interval) ENTERED 

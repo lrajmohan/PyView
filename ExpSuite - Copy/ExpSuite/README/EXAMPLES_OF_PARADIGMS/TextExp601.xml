@@ -1,0 +1,50 @@
+<Experiment>
+	<info>
+		<date>2012.August.26 22.05.40</date>
+		<name>TextExp601</name>
+	</info>
+	<trialDuration>6.3</trialDuration>
+	<autoRinse do="False" for="0.043" wait="0.5" />
+	<terminator />
+	<intervals>
+		<Interval id="0" name="Interval0" type="Wait">
+			<startTime>0</startTime>
+			<duration changable="False" vary="False" varyBy="0.0">2.3</duration>
+			<action>
+				<Lever id="-1" />
+				<Begin id="-1" />
+				<End id="-1" />
+			</action>
+		</Interval>
+		<Interval id="1" name="Interval1" type="Tone">
+			<startTime>2.3</startTime>
+			<duration changable="False" vary="False" varyBy="0.0">1.0</duration>
+			<opt freq="4000" />
+			<action>
+				<Lever id="-1" />
+				<Begin id="-1" />
+				<End id="-1" />
+			</action>
+		</Interval>
+		<Interval id="2" name="Interval2" type="Reward">
+			<startTime>3.3</startTime>
+			<duration changable="False" vary="False" varyBy="0.0">3.0</duration>
+			<action>
+				<Lever id="0" />
+				<Begin id="-1" />
+				<End id="-1" />
+			</action>
+		</Interval>
+	</intervals>
+	<actions>
+		<Action id="0" name="Interval2 action" type="Taste">
+			<manual>False</manual>
+			<timeConstraints maxTime="0.0" minTime="0.0" />
+			<triggers />
+			<opt runTime="0.043" />
+			<valves>
+				<v>0</v>
+			</valves>
+		</Action>
+	</actions>
+</Experiment>

@@ -1,0 +1,4 @@
+23.0602236049	Tone Delivery 
+27.2742580713	Lever Press 
+27.3930930049	Lever Press 
+27.5118782439	Lever Press 

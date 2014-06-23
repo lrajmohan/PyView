@@ -1,0 +1,9 @@
+8.49420060047	Tone Delivery 
+12.1668287575	Taste Delivery 
+14.1656675828	Tone Delivery 
+18.1968359212	Taste Delivery 
+20.1946080615	Tone Delivery 
+24.6867246367	Taste Delivery 
+26.6837898533	Tone Delivery 
+32.9648280933	Taste Delivery 
+34.9644567833	Tone Delivery 

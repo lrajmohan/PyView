@@ -1,0 +1,100 @@
+
+Experiment Begins .. Trial Duration: 22.0 seconds
+
+1.2831682965e-06 >>> preCue (Wait Interval) ENTERED 
+0.62 Mark Time 
+1.73 Mark Time 
+2.5 Mark Time 
+3.08 Lever Pressed
+4.41 Lever Pressed
+8.29 Mark Time 
+
+9.00000962376 >>> tone1 (Tone Interval) ENTERED 
+9.0 Tone 
+10.11 Lever Pressed
+10.11 Taste 
+- - Trial 2 - - 
+
+
+10.1271177089 >>> preCue (Wait Interval) ENTERED 
+
+10.1271177089 >>> preCue (Wait Interval) ENTERED 
+11.49 Mark Time 
+12.03 Lever Pressed
+13.52 Lever Pressed
+14.31 Lever Pressed
+15.73 Lever Pressed
+17.47 Mark Time 
+18.31 Mark Time 
+19.31 Mark Time 
+Writing to File Completed.
+
+End of experiment.
+
+Experiment Begins .. Trial Duration: 22.0 seconds
+
+0.00450071279999 >>> preCue (Wait Interval) ENTERED 
+0.48 Mark Time 
+1.37 Lever Pressed
+2.34 Lever Pressed
+3.64 Lever Pressed
+4.85 Mark Time 
+5.75 Mark Time 
+6.88 Mark Time 
+7.87 Mark Time 
+9.11 Mark Time 
+9.92 Mark Time 
+10.74 Mark Time 
+
+11.0000545347 >>> tone1 (Tone Interval) ENTERED 
+11.01 Tone 
+11.69 Lever Pressed
+11.69 Taste 
+- - Trial 2 - - 
+
+
+11.7055083849 >>> preCue (Wait Interval) ENTERED 
+
+11.7055083849 >>> preCue (Wait Interval) ENTERED 
+12.69 Mark Time 
+13.36 Lever Pressed
+14.97 Lever Pressed
+15.73 Lever Pressed
+16.59 Lever Pressed
+18.42 Mark Time 
+Writing to File Completed.
+
+End of experiment.
+
+Experiment Begins .. Trial Duration: 22.0 seconds
+
+0.00357683162651 >>> preCue (Wait Interval) ENTERED 
+0.86 Mark Time 
+2.21 Lever Pressed
+3.62 Lever Pressed
+4.76 Lever Pressed
+6.67 Lever Pressed
+8.04 Lever Pressed
+9.53 Lever Pressed
+10.91 Lever Pressed
+
+11.0000109069 >>> tone1 (Tone Interval) ENTERED 
+11.0 Tone 
+12.23 Lever Pressed
+12.23 Taste 
+- - Trial 2 - - 
+
+
+12.2400737309 >>> preCue (Wait Interval) ENTERED 
+
+12.2400737309 >>> preCue (Wait Interval) ENTERED 
+13.83 Mark Time 
+15.52 Lever Pressed
+17.62 Lever Pressed
+19.19 Lever Pressed
+20.85 Mark Time 
+21.72 Mark Time 
+22.64 Mark Time 
+
+23.3135466643 >>> tone1 (Tone Interval) ENTERED 
+23.32 Tone 

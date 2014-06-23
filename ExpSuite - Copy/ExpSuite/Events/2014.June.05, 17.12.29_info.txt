@@ -1,0 +1,20 @@
+EXPERIMENT DESCRIPTION : sucrose exp June 14
+EXPERIMENT FILE : C:\Users\raj\PycharmProjects\pycharm_pyview\ExpSuite - Copy\ExpSuite\PyView\saves\sucrose02.xml 
+Trial Duration = 	3.5
+Intervals Sequence
+preSuc = 	2.0 
+rinse int. = 	1.0 
+end interval = 	0.5 
+
+Actions Detail 
+sucrose Delivery Time = 0.220000 s 
+manual sucrose Delivery Time = 0.220000 s 
+rinse Delivery Time = 0.220000 s 
+manual rinse Delivery Time = 0.220000 s 
+
+Experiment Run Summary 
+Total experiment runtime = 28.4634579333
+Trials = 9
+Number of Lever Presses = 0
+Rewards = 16
+Manual Rewards = 0

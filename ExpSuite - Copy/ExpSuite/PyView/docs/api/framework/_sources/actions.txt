@@ -1,0 +1,16 @@
+Actions.py
+==================================
+
+Contents:
+
+.. toctree::
+	:maxdepth: 2
+	
+.. automodule:: Actions
+   :inherited-members:
+
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

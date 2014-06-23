@@ -1,0 +1,47 @@
+
+Experiment Begins .. Trial Duration: 3.0 seconds
+
+1.2831682965e-06 >>> preSuc (Wait Interval) ENTERED 
+1.53 Mark Time 
+2.0 Taste 
+
+2.00000192475 >>> rinse int. (Wait Interval) ENTERED 
+2.55 Mark Time 
+3.01 Taste 
+- - Trial 2 - - 
+
+
+3.00792933849 >>> preSuc (Wait Interval) ENTERED 
+3.38 Mark Time 
+5.02 Taste 
+
+5.01671262548 >>> rinse int. (Wait Interval) ENTERED 
+5.57 Mark Time 
+6.03 Taste 
+- - Trial 3 - - 
+
+
+6.02554852237 >>> preSuc (Wait Interval) ENTERED 
+6.24 Mark Time 
+7.16 Mark Time 
+8.03 Taste 
+
+8.03442163114 >>> rinse int. (Wait Interval) ENTERED 
+8.8 Mark Time 
+9.04 Taste 
+- - Trial 4 - - 
+
+
+9.04403769435 >>> preSuc (Wait Interval) ENTERED 
+9.79 Mark Time 
+11.06 Taste 
+
+11.0573159199 >>> rinse int. (Wait Interval) ENTERED 
+12.07 Taste 
+- - Trial 5 - - 
+
+
+12.0653203237 >>> preSuc (Wait Interval) ENTERED 
+14.07 Taste 
+
+14.0745790246 >>> rinse int. (Wait Interval) ENTERED 

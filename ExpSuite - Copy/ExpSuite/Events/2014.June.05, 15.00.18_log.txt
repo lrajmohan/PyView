@@ -1,0 +1,584 @@
+
+Experiment Begins .. Trial Duration: 17.0 seconds
+
+1.2831682965e-06 >>> preCue (Wait Interval) ENTERED 
+0.5 Mark Time 
+1.37 Lever Pressed
+2.56 Lever Pressed
+3.87 Mark Time 
+4.58 Lever Pressed
+6.29 Mark Time 
+7.39 Mark Time 
+8.29 Mark Time 
+9.19 Mark Time 
+10.24 Mark Time 
+
+11.0000102653 >>> tone1 (Tone Interval) ENTERED 
+11.0 Tone 
+11.13 Mark Time 
+12.05 Lever Pressed
+12.05 Taste 
+- - Trial 2 - - 
+
+
+12.0590719357 >>> preCue (Wait Interval) ENTERED 
+
+12.0590719357 >>> preCue (Wait Interval) ENTERED 
+12.67 Mark Time 
+13.42 Lever Pressed
+14.27 Lever Pressed
+15.38 Lever Pressed
+16.96 Lever Pressed
+Writing to File Completed.
+
+End of experiment.
+
+Experiment Begins .. Trial Duration: 17.0 seconds
+
+0.00470730289573 >>> preCue (Wait Interval) ENTERED 
+1.31 Mark Time 
+2.92 Lever Pressed
+4.99 Lever Pressed
+6.02 Mark Time 
+7.63 Mark Time 
+9.01 Lever Pressed
+10.0 Mark Time 
+
+10.0959129807 >>> tone1 (Tone Interval) ENTERED 
+10.1 Tone 
+12.26 Lever Pressed
+12.26 Taste 
+- - Trial 2 - - 
+
+
+12.2743619125 >>> preCue (Wait Interval) ENTERED 
+
+12.2743619125 >>> preCue (Wait Interval) ENTERED 
+13.23 Mark Time 
+14.3 Lever Pressed
+15.8 Lever Pressed
+Writing to File Completed.
+
+End of experiment.
+
+Experiment Begins .. Trial Duration: 17.0 seconds
+
+0.00530590090604 >>> preCue (Wait Interval) ENTERED 
+2.28 Mark Time 
+4.22 Mark Time 
+5.36 Mark Time 
+6.56 Mark Time 
+8.17 Mark Time 
+
+8.77122969867 >>> tone1 (Tone Interval) ENTERED 
+8.78 Tone 
+9.05 Lever Pressed
+9.05 Taste 
+- - Trial 2 - - 
+
+
+9.0639935277 >>> preCue (Wait Interval) ENTERED 
+
+9.0639935277 >>> preCue (Wait Interval) ENTERED 
+10.66 Mark Time 
+11.28 Lever Pressed
+
+15.48928362 >>> tone1 (Tone Interval) ENTERED 
+15.49 Tone 
+- - Trial 3 - - 
+
+
+20.4924081348 >>> preCue (Wait Interval) ENTERED 
+
+25.6161042754 >>> tone1 (Tone Interval) ENTERED 
+25.62 Tone 
+- - Trial 4 - - 
+
+
+30.6188868258 >>> preCue (Wait Interval) ENTERED 
+
+35.6568070153 >>> tone1 (Tone Interval) ENTERED 
+35.66 Tone 
+- - Trial 5 - - 
+
+
+40.6590301044 >>> preCue (Wait Interval) ENTERED 
+
+46.4645678738 >>> tone1 (Tone Interval) ENTERED 
+46.47 Tone 
+- - Trial 6 - - 
+
+
+51.4671913114 >>> preCue (Wait Interval) ENTERED 
+
+57.3832714632 >>> tone1 (Tone Interval) ENTERED 
+57.39 Tone 
+- - Trial 7 - - 
+
+
+62.3859443028 >>> preCue (Wait Interval) ENTERED 
+
+68.1531923302 >>> tone1 (Tone Interval) ENTERED 
+68.16 Tone 
+- - Trial 8 - - 
+
+
+73.1552627223 >>> preCue (Wait Interval) ENTERED 
+
+77.8088425694 >>> tone1 (Tone Interval) ENTERED 
+77.81 Tone 
+- - Trial 9 - - 
+
+
+82.8116013812 >>> preCue (Wait Interval) ENTERED 
+
+87.2345278775 >>> tone1 (Tone Interval) ENTERED 
+87.24 Tone 
+- - Trial 10 - - 
+
+
+92.2378269032 >>> preCue (Wait Interval) ENTERED 
+
+96.4907586219 >>> tone1 (Tone Interval) ENTERED 
+96.49 Tone 
+- - Trial 11 - - 
+
+
+101.493853624 >>> preCue (Wait Interval) ENTERED 
+
+107.334090189 >>> tone1 (Tone Interval) ENTERED 
+107.34 Tone 
+- - Trial 12 - - 
+
+
+112.336575686 >>> preCue (Wait Interval) ENTERED 
+
+118.114824315 >>> tone1 (Tone Interval) ENTERED 
+118.12 Tone 
+- - Trial 13 - - 
+
+
+123.117592751 >>> preCue (Wait Interval) ENTERED 
+
+128.703876836 >>> tone1 (Tone Interval) ENTERED 
+128.71 Tone 
+- - Trial 14 - - 
+
+
+133.706483593 >>> preCue (Wait Interval) ENTERED 
+
+138.000037853 >>> tone1 (Tone Interval) ENTERED 
+138.0 Tone 
+- - Trial 15 - - 
+
+
+143.002602907 >>> preCue (Wait Interval) ENTERED 
+
+148.950986179 >>> tone1 (Tone Interval) ENTERED 
+148.96 Tone 
+- - Trial 16 - - 
+
+
+153.954045894 >>> preCue (Wait Interval) ENTERED 
+
+158.670252053 >>> tone1 (Tone Interval) ENTERED 
+158.67 Tone 
+- - Trial 17 - - 
+
+
+163.673439443 >>> preCue (Wait Interval) ENTERED 
+
+168.578368862 >>> tone1 (Tone Interval) ENTERED 
+168.58 Tone 
+- - Trial 18 - - 
+
+
+173.580822921 >>> preCue (Wait Interval) ENTERED 
+
+179.533340562 >>> tone1 (Tone Interval) ENTERED 
+179.54 Tone 
+- - Trial 19 - - 
+
+
+184.536064087 >>> preCue (Wait Interval) ENTERED 
+
+189.760754554 >>> tone1 (Tone Interval) ENTERED 
+189.76 Tone 
+- - Trial 20 - - 
+
+
+194.763019346 >>> preCue (Wait Interval) ENTERED 
+
+199.108335975 >>> tone1 (Tone Interval) ENTERED 
+199.11 Tone 
+- - Trial 21 - - 
+
+
+204.110844569 >>> preCue (Wait Interval) ENTERED 
+
+208.505772974 >>> tone1 (Tone Interval) ENTERED 
+208.51 Tone 
+- - Trial 22 - - 
+
+
+213.508654329 >>> preCue (Wait Interval) ENTERED 
+
+219.142808291 >>> tone1 (Tone Interval) ENTERED 
+219.15 Tone 
+- - Trial 23 - - 
+
+
+224.145247594 >>> preCue (Wait Interval) ENTERED 
+
+228.405891154 >>> tone1 (Tone Interval) ENTERED 
+228.41 Tone 
+- - Trial 24 - - 
+
+
+233.409047748 >>> preCue (Wait Interval) ENTERED 
+
+238.061141045 >>> tone1 (Tone Interval) ENTERED 
+238.06 Tone 
+- - Trial 25 - - 
+
+
+243.063687492 >>> preCue (Wait Interval) ENTERED 
+
+247.092750612 >>> tone1 (Tone Interval) ENTERED 
+247.1 Tone 
+- - Trial 26 - - 
+
+
+252.095346462 >>> preCue (Wait Interval) ENTERED 
+
+258.069841567 >>> tone1 (Tone Interval) ENTERED 
+258.07 Tone 
+- - Trial 27 - - 
+
+
+263.073585211 >>> preCue (Wait Interval) ENTERED 
+
+267.69082509 >>> tone1 (Tone Interval) ENTERED 
+267.69 Tone 
+- - Trial 28 - - 
+
+
+272.693424789 >>> preCue (Wait Interval) ENTERED 
+
+277.190596686 >>> tone1 (Tone Interval) ENTERED 
+277.19 Tone 
+- - Trial 29 - - 
+
+
+282.193164947 >>> preCue (Wait Interval) ENTERED 
+
+286.987836848 >>> tone1 (Tone Interval) ENTERED 
+286.99 Tone 
+- - Trial 30 - - 
+
+
+291.990331968 >>> preCue (Wait Interval) ENTERED 
+
+296.430670417 >>> tone1 (Tone Interval) ENTERED 
+296.43 Tone 
+- - Trial 31 - - 
+
+
+301.433339407 >>> preCue (Wait Interval) ENTERED 
+
+306.491187842 >>> tone1 (Tone Interval) ENTERED 
+306.49 Tone 
+- - Trial 32 - - 
+
+
+311.493834376 >>> preCue (Wait Interval) ENTERED 
+
+317.390551519 >>> tone1 (Tone Interval) ENTERED 
+317.39 Tone 
+- - Trial 33 - - 
+
+
+322.393097966 >>> preCue (Wait Interval) ENTERED 
+
+327.16479153 >>> tone1 (Tone Interval) ENTERED 
+327.17 Tone 
+- - Trial 34 - - 
+
+
+332.167523395 >>> preCue (Wait Interval) ENTERED 
+
+337.355768676 >>> tone1 (Tone Interval) ENTERED 
+337.36 Tone 
+- - Trial 35 - - 
+
+
+342.358066188 >>> preCue (Wait Interval) ENTERED 
+
+346.908373443 >>> tone1 (Tone Interval) ENTERED 
+346.91 Tone 
+- - Trial 36 - - 
+
+
+351.911184223 >>> preCue (Wait Interval) ENTERED 
+
+356.85097925 >>> tone1 (Tone Interval) ENTERED 
+356.85 Tone 
+- - Trial 37 - - 
+
+
+361.853852905 >>> preCue (Wait Interval) ENTERED 
+
+367.019586922 >>> tone1 (Tone Interval) ENTERED 
+367.02 Tone 
+- - Trial 38 - - 
+
+
+372.022030075 >>> preCue (Wait Interval) ENTERED 
+
+377.94812728 >>> tone1 (Tone Interval) ENTERED 
+377.95 Tone 
+- - Trial 39 - - 
+
+
+382.951041997 >>> preCue (Wait Interval) ENTERED 
+
+388.373374386 >>> tone1 (Tone Interval) ENTERED 
+388.38 Tone 
+- - Trial 40 - - 
+
+
+393.375986917 >>> preCue (Wait Interval) ENTERED 
+
+399.368327685 >>> tone1 (Tone Interval) ENTERED 
+399.37 Tone 
+- - Trial 41 - - 
+
+
+404.370631614 >>> preCue (Wait Interval) ENTERED 
+
+410.220850587 >>> tone1 (Tone Interval) ENTERED 
+410.22 Tone 
+- - Trial 42 - - 
+
+
+415.224202864 >>> preCue (Wait Interval) ENTERED 
+
+420.922542829 >>> tone1 (Tone Interval) ENTERED 
+420.93 Tone 
+- - Trial 43 - - 
+
+
+425.925116223 >>> preCue (Wait Interval) ENTERED 
+
+431.235945778 >>> tone1 (Tone Interval) ENTERED 
+431.24 Tone 
+- - Trial 44 - - 
+
+
+436.238347228 >>> preCue (Wait Interval) ENTERED 
+
+440.460767771 >>> tone1 (Tone Interval) ENTERED 
+440.46 Tone 
+- - Trial 45 - - 
+
+
+445.463149973 >>> preCue (Wait Interval) ENTERED 
+
+450.304230863 >>> tone1 (Tone Interval) ENTERED 
+450.31 Tone 
+- - Trial 46 - - 
+
+
+455.30708912 >>> preCue (Wait Interval) ENTERED 
+
+461.300256249 >>> tone1 (Tone Interval) ENTERED 
+461.3 Tone 
+- - Trial 47 - - 
+
+
+466.302443409 >>> preCue (Wait Interval) ENTERED 
+
+471.28581419 >>> tone1 (Tone Interval) ENTERED 
+471.29 Tone 
+- - Trial 48 - - 
+
+
+476.288185485 >>> preCue (Wait Interval) ENTERED 
+
+481.009130384 >>> tone1 (Tone Interval) ENTERED 
+481.01 Tone 
+- - Trial 49 - - 
+
+
+486.012030986 >>> preCue (Wait Interval) ENTERED 
+
+490.972882163 >>> tone1 (Tone Interval) ENTERED 
+490.98 Tone 
+- - Trial 50 - - 
+
+
+495.97529901 >>> preCue (Wait Interval) ENTERED 
+
+501.393082568 >>> tone1 (Tone Interval) ENTERED 
+501.4 Tone 
+- - Trial 51 - - 
+
+
+506.39606401 >>> preCue (Wait Interval) ENTERED 
+
+511.584733377 >>> tone1 (Tone Interval) ENTERED 
+511.59 Tone 
+- - Trial 52 - - 
+
+
+516.58706746 >>> preCue (Wait Interval) ENTERED 
+
+522.117748656 >>> tone1 (Tone Interval) ENTERED 
+522.12 Tone 
+- - Trial 53 - - 
+
+
+527.120114818 >>> preCue (Wait Interval) ENTERED 
+
+532.104449258 >>> tone1 (Tone Interval) ENTERED 
+532.11 Tone 
+- - Trial 54 - - 
+
+
+537.106693519 >>> preCue (Wait Interval) ENTERED 
+
+542.75905179 >>> tone1 (Tone Interval) ENTERED 
+542.76 Tone 
+- - Trial 55 - - 
+
+
+547.761083045 >>> preCue (Wait Interval) ENTERED 
+
+552.242127442 >>> tone1 (Tone Interval) ENTERED 
+552.25 Tone 
+- - Trial 56 - - 
+
+
+557.244947846 >>> preCue (Wait Interval) ENTERED 
+
+562.611089654 >>> tone1 (Tone Interval) ENTERED 
+562.61 Tone 
+- - Trial 57 - - 
+
+
+567.613692561 >>> preCue (Wait Interval) ENTERED 
+
+572.185555759 >>> tone1 (Tone Interval) ENTERED 
+572.19 Tone 
+- - Trial 58 - - 
+
+
+577.188764963 >>> preCue (Wait Interval) ENTERED 
+
+582.593293393 >>> tone1 (Tone Interval) ENTERED 
+582.6 Tone 
+- - Trial 59 - - 
+
+
+587.595779531 >>> preCue (Wait Interval) ENTERED 
+
+593.014416396 >>> tone1 (Tone Interval) ENTERED 
+593.02 Tone 
+- - Trial 60 - - 
+
+
+598.017271445 >>> preCue (Wait Interval) ENTERED 
+
+603.342263971 >>> tone1 (Tone Interval) ENTERED 
+603.35 Tone 
+- - Trial 61 - - 
+
+
+608.345350632 >>> preCue (Wait Interval) ENTERED 
+
+613.753718301 >>> tone1 (Tone Interval) ENTERED 
+613.76 Tone 
+- - Trial 62 - - 
+
+
+618.755834245 >>> preCue (Wait Interval) ENTERED 
+
+624.230186278 >>> tone1 (Tone Interval) ENTERED 
+624.23 Tone 
+- - Trial 63 - - 
+
+
+629.232736575 >>> preCue (Wait Interval) ENTERED 
+
+633.613974216 >>> tone1 (Tone Interval) ENTERED 
+633.62 Tone 
+- - Trial 64 - - 
+
+
+638.616472545 >>> preCue (Wait Interval) ENTERED 
+
+643.064971302 >>> tone1 (Tone Interval) ENTERED 
+643.07 Tone 
+- - Trial 65 - - 
+
+
+648.06776091 >>> preCue (Wait Interval) ENTERED 
+
+653.766795711 >>> tone1 (Tone Interval) ENTERED 
+653.77 Tone 
+- - Trial 66 - - 
+
+
+658.769281208 >>> preCue (Wait Interval) ENTERED 
+
+663.387460366 >>> tone1 (Tone Interval) ENTERED 
+663.39 Tone 
+- - Trial 67 - - 
+
+
+668.390015154 >>> preCue (Wait Interval) ENTERED 
+
+673.744329359 >>> tone1 (Tone Interval) ENTERED 
+673.75 Tone 
+- - Trial 68 - - 
+
+
+678.746906602 >>> preCue (Wait Interval) ENTERED 
+
+683.195792876 >>> tone1 (Tone Interval) ENTERED 
+683.2 Tone 
+- - Trial 69 - - 
+
+
+688.198368836 >>> preCue (Wait Interval) ENTERED 
+
+693.061258454 >>> tone1 (Tone Interval) ENTERED 
+693.06 Tone 
+- - Trial 70 - - 
+
+
+698.06409554 >>> preCue (Wait Interval) ENTERED 
+
+702.672654785 >>> tone1 (Tone Interval) ENTERED 
+702.68 Tone 
+- - Trial 71 - - 
+
+
+707.675019023 >>> preCue (Wait Interval) ENTERED 
+
+711.907305205 >>> tone1 (Tone Interval) ENTERED 
+711.91 Tone 
+- - Trial 72 - - 
+
+
+716.911437649 >>> preCue (Wait Interval) ENTERED 
+
+721.191048361 >>> tone1 (Tone Interval) ENTERED 
+721.19 Tone 
+- - Trial 73 - - 
+
+
+726.193614056 >>> preCue (Wait Interval) ENTERED 
+
+730.425764223 >>> tone1 (Tone Interval) ENTERED 
+730.43 Tone 

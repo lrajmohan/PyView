@@ -1,0 +1,10 @@
+13.4571899921	Tone Delivery 
+14.6351188524	Lever Press 
+14.9988283264	Lever Press 
+15.0798263907	Lever Press 
+15.1187488429	Lever Press 
+15.7217404603	Lever Press 
+15.9585679684	Lever Press 
+16.555475142	Lever Press 
+16.7610975656	Lever Press 
+16.8535614434	Lever Press 

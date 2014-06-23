@@ -1,0 +1,10 @@
+2.00302891876	00000008	 % Taste Delivery	Valve 4
+3.01241978594	00000001	 % Taste Delivery	Valve 1
+3.52069301353	00000800	 % New Trial	
+5.52363082735	00000008	 % Taste Delivery	Valve 4
+6.53072033219	00000001	 % Taste Delivery	Valve 1
+7.03943304492	00000800	 % New Trial	
+9.0421982726	00000008	 % Taste Delivery	Valve 4
+10.0507043952	00000001	 % Taste Delivery	Valve 1
+10.5594575278	00000800	 % New Trial	
+12.5623850762	00000008	 % Taste Delivery	Valve 4

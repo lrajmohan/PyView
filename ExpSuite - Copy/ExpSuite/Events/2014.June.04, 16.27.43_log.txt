@@ -1,0 +1,10 @@
+
+Experiment Begins .. Trial Duration: 17.0 seconds
+
+1.2831682965e-06 >>> preCue (Wait Interval) ENTERED 
+0.53 Mark Time 
+1.2 Lever Pressed
+1.37 Lever Pressed
+1.55 Lever Pressed
+1.71 Lever Pressed
+2.94 Lever Pressed

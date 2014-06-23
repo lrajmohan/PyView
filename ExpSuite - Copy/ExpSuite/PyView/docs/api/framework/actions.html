@@ -1,0 +1,600 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Actions.py &mdash; PyView framework alpha documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="PyView framework alpha documentation" href="index.html" />
+    <link rel="next" title="Conditions.py" href="conditions.html" />
+    <link rel="prev" title="Intervals.py" href="intervals.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="conditions.html" title="Conditions.py"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="intervals.html" title="Intervals.py"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyView framework alpha documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="actions-py">
+<h1>Actions.py<a class="headerlink" href="#actions-py" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-Actions"></span><dl class="class">
+<dt id="Actions.Action">
+<em class="property">class </em><tt class="descclassname">Actions.</tt><tt class="descname">Action</tt><big>(</big><em>name=''</em><big>)</big><a class="headerlink" href="#Actions.Action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Super class for Actions: Taste, PlayTone, Jump, ChangeIntDur</p>
+<dl class="method">
+<dt id="Actions.Action.act">
+<tt class="descname">act</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Action.act" title="Permalink to this definition">¶</a></dt>
+<dd><p>empty function, later binded by Experiment execution module</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.addTriggeredEffect">
+<tt class="descname">addTriggeredEffect</tt><big>(</big><em>anotherAction</em><big>)</big><a class="headerlink" href="#Actions.Action.addTriggeredEffect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add &#8216;anotherAction&#8217; to triggerFor list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.bindAction">
+<tt class="descname">bindAction</tt><big>(</big><em>actmeth</em><big>)</big><a class="headerlink" href="#Actions.Action.bindAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>bind the function passed by &#8216;actmeth&#8217; to the act() function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.checkTimeConst">
+<tt class="descname">checkTimeConst</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Action.checkTimeConst" title="Permalink to this definition">¶</a></dt>
+<dd><p>are we within time constraint</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Action.hasTimeConstraints">
+<tt class="descname">hasTimeConstraints</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Action.hasTimeConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>if time constraints defined, then Action is not performed if we are not within</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.isATrigger">
+<tt class="descname">isATrigger</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Action.isATrigger" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if this action is a trigger for any other actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Action.isManual">
+<tt class="descname">isManual</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Action.isManual" title="Permalink to this definition">¶</a></dt>
+<dd><p>if this action can be manually triggered</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Action.name">
+<tt class="descname">name</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Action.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>name of action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.perform">
+<tt class="descname">perform</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Action.perform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform action by:
+checking time constraint
+running act() function
+run perform() on all triggerFor actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Action.performed">
+<tt class="descname">performed</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Action.performed" title="Permalink to this definition">¶</a></dt>
+<dd><p>if action is performed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Action.ready">
+<tt class="descname">ready</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Action.ready" title="Permalink to this definition">¶</a></dt>
+<dd><p>sometimes this flag is used to figure out if we should perform this action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.setManual">
+<tt class="descname">setManual</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Action.setManual" title="Permalink to this definition">¶</a></dt>
+<dd><p>set this action to be manually stimulated</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.setTimeConstraints">
+<tt class="descname">setTimeConstraints</tt><big>(</big><em>minTime</em>, <em>maxTime</em><big>)</big><a class="headerlink" href="#Actions.Action.setTimeConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>set time constraints</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Action.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>print Action information</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Action.triggerActions">
+<tt class="descname">triggerActions</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Action.triggerActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>run perform() on all triggerFor actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Action.triggerFor">
+<tt class="descname">triggerFor</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Action.triggerFor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actions we preform immediately after this action is performed</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Action.type">
+<tt class="descname">type</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Action.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>type of action</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Actions.ChangeIntDur">
+<em class="property">class </em><tt class="descclassname">Actions.</tt><tt class="descname">ChangeIntDur</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cause an interval duration to change</p>
+<dl class="method">
+<dt id="Actions.ChangeIntDur.act">
+<tt class="descname">act</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.act" title="Permalink to this definition">¶</a></dt>
+<dd><p>empty function, later binded by Experiment execution module</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.addTriggeredEffect">
+<tt class="descname">addTriggeredEffect</tt><big>(</big><em>anotherAction</em><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.addTriggeredEffect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add &#8216;anotherAction&#8217; to triggerFor list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.bindAction">
+<tt class="descname">bindAction</tt><big>(</big><em>actmeth</em><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.bindAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>bind the function passed by &#8216;actmeth&#8217; to the act() function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.checkTimeConst">
+<tt class="descname">checkTimeConst</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.checkTimeConst" title="Permalink to this definition">¶</a></dt>
+<dd><p>are we within time constraint</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.ChangeIntDur.increment">
+<tt class="descname">increment</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.ChangeIntDur.increment" title="Permalink to this definition">¶</a></dt>
+<dd><p>how much to increment by</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.ChangeIntDur.interval">
+<tt class="descname">interval</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.ChangeIntDur.interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>index of interval to influence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.isATrigger">
+<tt class="descname">isATrigger</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.isATrigger" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if this action is a trigger for any other actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.ChangeIntDur.mode">
+<tt class="descname">mode</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.ChangeIntDur.mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>additive or multiplicative increment [0: add, 1: multi]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.perform">
+<tt class="descname">perform</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.perform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform action by:
+checking time constraint
+running act() function
+run perform() on all triggerFor actions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.setManual">
+<tt class="descname">setManual</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.setManual" title="Permalink to this definition">¶</a></dt>
+<dd><p>set this action to be manually stimulated</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.setTimeConstraints">
+<tt class="descname">setTimeConstraints</tt><big>(</big><em>minTime</em>, <em>maxTime</em><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.setTimeConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>set time constraints</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends to toString() function as defined in Action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.ChangeIntDur.triggerActions">
+<tt class="descname">triggerActions</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.ChangeIntDur.triggerActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>run perform() on all triggerFor actions</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Actions.Jump">
+<em class="property">class </em><tt class="descclassname">Actions.</tt><tt class="descname">Jump</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#Actions.Jump" title="Permalink to this definition">¶</a></dt>
+<dd><p>Jumps to the start of another interval</p>
+<dl class="method">
+<dt id="Actions.Jump.act">
+<tt class="descname">act</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Jump.act" title="Permalink to this definition">¶</a></dt>
+<dd><p>empty function, later binded by Experiment execution module</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.addTriggeredEffect">
+<tt class="descname">addTriggeredEffect</tt><big>(</big><em>anotherAction</em><big>)</big><a class="headerlink" href="#Actions.Jump.addTriggeredEffect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add &#8216;anotherAction&#8217; to triggerFor list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.bindAction">
+<tt class="descname">bindAction</tt><big>(</big><em>actmeth</em><big>)</big><a class="headerlink" href="#Actions.Jump.bindAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>bind the function passed by &#8216;actmeth&#8217; to the act() function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.checkTimeConst">
+<tt class="descname">checkTimeConst</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Jump.checkTimeConst" title="Permalink to this definition">¶</a></dt>
+<dd><p>are we within time constraint</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Jump.condition">
+<tt class="descname">condition</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Jump.condition" title="Permalink to this definition">¶</a></dt>
+<dd><p>when condition==None or NullCon it is considered as true, and will jump by default</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.isATrigger">
+<tt class="descname">isATrigger</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Jump.isATrigger" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if this action is a trigger for any other actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Jump.jumper">
+<tt class="descname">jumper</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Jump.jumper" title="Permalink to this definition">¶</a></dt>
+<dd><p>2d array of interval(s) to jump to [Interval Index, Jump Probability]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.makeRestarter">
+<tt class="descname">makeRestarter</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Jump.makeRestarter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make this jump simulate a restart action</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Jump.newTrial">
+<tt class="descname">newTrial</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Jump.newTrial" title="Permalink to this definition">¶</a></dt>
+<dd><p>if this jump stimulates a new trial event</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.perform">
+<tt class="descname">perform</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Jump.perform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform action by:
+checking time constraint
+running act() function
+run perform() on all triggerFor actions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.selectIval">
+<tt class="descname">selectIval</tt><big>(</big><em>r</em><big>)</big><a class="headerlink" href="#Actions.Jump.selectIval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the index of the interval to jump to</p>
+<dl class="docutils">
+<dt>Arguments:</dt>
+<dd>r : (float) random number [0,1)</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.setManual">
+<tt class="descname">setManual</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Jump.setManual" title="Permalink to this definition">¶</a></dt>
+<dd><p>set this action to be manually stimulated</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.setTimeConstraints">
+<tt class="descname">setTimeConstraints</tt><big>(</big><em>minTime</em>, <em>maxTime</em><big>)</big><a class="headerlink" href="#Actions.Jump.setTimeConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>set time constraints</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.test">
+<tt class="descname">test</tt><big>(</big><em>p</em><big>)</big><a class="headerlink" href="#Actions.Jump.test" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test if we should jump or nop</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Jump.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends to toString() function as defined in Action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Jump.triggerActions">
+<tt class="descname">triggerActions</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Jump.triggerActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>run perform() on all triggerFor actions</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Actions.PlayTone">
+<em class="property">class </em><tt class="descclassname">Actions.</tt><tt class="descname">PlayTone</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#Actions.PlayTone" title="Permalink to this definition">¶</a></dt>
+<dd><p>s not an active action in the experiment paradigm. 
+It is used during our particular PyView implementation 
+to attach to the begin action of any Tone intervals.</p>
+<dl class="method">
+<dt id="Actions.PlayTone.act">
+<tt class="descname">act</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.PlayTone.act" title="Permalink to this definition">¶</a></dt>
+<dd><p>empty function, later binded by Experiment execution module</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.addTriggeredEffect">
+<tt class="descname">addTriggeredEffect</tt><big>(</big><em>anotherAction</em><big>)</big><a class="headerlink" href="#Actions.PlayTone.addTriggeredEffect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add &#8216;anotherAction&#8217; to triggerFor list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.bindAction">
+<tt class="descname">bindAction</tt><big>(</big><em>actmeth</em><big>)</big><a class="headerlink" href="#Actions.PlayTone.bindAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>bind the function passed by &#8216;actmeth&#8217; to the act() function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.checkTimeConst">
+<tt class="descname">checkTimeConst</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.PlayTone.checkTimeConst" title="Permalink to this definition">¶</a></dt>
+<dd><p>are we within time constraint</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.PlayTone.freq">
+<tt class="descname">freq</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.PlayTone.freq" title="Permalink to this definition">¶</a></dt>
+<dd><p>frequency: 1000 Hz - 11,160 Hz (default=1000)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.isATrigger">
+<tt class="descname">isATrigger</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.PlayTone.isATrigger" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if this action is a trigger for any other actions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.perform">
+<tt class="descname">perform</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.PlayTone.perform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform action by:
+checking time constraint
+running act() function
+run perform() on all triggerFor actions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.setManual">
+<tt class="descname">setManual</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.PlayTone.setManual" title="Permalink to this definition">¶</a></dt>
+<dd><p>set this action to be manually stimulated</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.setTimeConstraints">
+<tt class="descname">setTimeConstraints</tt><big>(</big><em>minTime</em>, <em>maxTime</em><big>)</big><a class="headerlink" href="#Actions.PlayTone.setTimeConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>set time constraints</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.PlayTone.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends to toString() function as defined in Action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.PlayTone.triggerActions">
+<tt class="descname">triggerActions</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.PlayTone.triggerActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>run perform() on all triggerFor actions</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Actions.Taste">
+<em class="property">class </em><tt class="descclassname">Actions.</tt><tt class="descname">Taste</tt><big>(</big><em>name</em><big>)</big><a class="headerlink" href="#Actions.Taste" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deliver taste from valve action</p>
+<dl class="method">
+<dt id="Actions.Taste.act">
+<tt class="descname">act</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Taste.act" title="Permalink to this definition">¶</a></dt>
+<dd><p>empty function, later binded by Experiment execution module</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.addTriggeredEffect">
+<tt class="descname">addTriggeredEffect</tt><big>(</big><em>anotherAction</em><big>)</big><a class="headerlink" href="#Actions.Taste.addTriggeredEffect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add &#8216;anotherAction&#8217; to triggerFor list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.bindAction">
+<tt class="descname">bindAction</tt><big>(</big><em>actmeth</em><big>)</big><a class="headerlink" href="#Actions.Taste.bindAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>bind the function passed by &#8216;actmeth&#8217; to the act() function</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.checkTimeConst">
+<tt class="descname">checkTimeConst</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Taste.checkTimeConst" title="Permalink to this definition">¶</a></dt>
+<dd><p>are we within time constraint</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.chooseATaste">
+<tt class="descname">chooseATaste</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Taste.chooseATaste" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the valve number to open</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.isATrigger">
+<tt class="descname">isATrigger</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Taste.isATrigger" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if this action is a trigger for any other actions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.perform">
+<tt class="descname">perform</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Taste.perform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform action by:
+checking time constraint
+running act() function
+run perform() on all triggerFor actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Taste.runTime">
+<tt class="descname">runTime</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Taste.runTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>lag time to deliver water from valve</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.setManual">
+<tt class="descname">setManual</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Taste.setManual" title="Permalink to this definition">¶</a></dt>
+<dd><p>set this action to be manually stimulated</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.setTimeConstraints">
+<tt class="descname">setTimeConstraints</tt><big>(</big><em>minTime</em>, <em>maxTime</em><big>)</big><a class="headerlink" href="#Actions.Taste.setTimeConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>set time constraints</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Actions.Taste.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends to toString() function as defined in Action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Actions.Taste.triggerActions">
+<tt class="descname">triggerActions</tt><big>(</big><em>t</em><big>)</big><a class="headerlink" href="#Actions.Taste.triggerActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>run perform() on all triggerFor actions</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Actions.Taste.valves">
+<tt class="descname">valves</tt><em class="property"> = None</em><a class="headerlink" href="#Actions.Taste.valves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Available valves to deliver water from. If more than one is select,
+then we randomly choose one</p>
+</dd></dl>
+
+</dd></dl>
+
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="intervals.html"
+                        title="previous chapter">Intervals.py</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="conditions.html"
+                        title="next chapter">Conditions.py</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/actions.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="conditions.html" title="Conditions.py"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="intervals.html" title="Intervals.py"
+             >previous</a> |</li>
+        <li><a href="index.html">PyView framework alpha documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Alice Q. Wong.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

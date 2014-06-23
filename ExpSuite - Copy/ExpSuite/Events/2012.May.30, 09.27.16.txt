@@ -1,0 +1,17 @@
+2.00000209978	Tone Delivery 
+2.2291259907	Lever Press 
+3.18913286399	Lever Press 
+4.26911491786	Lever Press 
+5.23706001279	Taste Delivery 
+7.28683461881	Tone Delivery 
+9.20572043307	Lever Press 
+10.2216129747	Lever Press 
+11.1090003258	Taste Delivery 
+13.156291241	Tone Delivery 
+15.845529269	Lever Press 
+21.5329901825	Lever Press 
+22.3729784797	Lever Press 
+23.1169378475	Lever Press 
+23.9249779785	Taste Delivery 
+25.9658834601	Tone Delivery 
+29.228931411	Taste Delivery 

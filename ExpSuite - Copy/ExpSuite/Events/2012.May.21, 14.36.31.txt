@@ -1,0 +1,15 @@
+212.640653506	Tone Delivery 
+214.890574852	Lever Press 
+214.895167056	Taste Delivery 
+214.899326358	Tone Delivery 
+215.314483433	Lever Press 
+215.540231486	Lever Press 
+215.643816814	Lever Press 
+215.915726639	Lever Press 
+216.164061606	Lever Press 
+216.437972165	Lever Press 
+216.661219038	Lever Press 
+216.839092254	Lever Press 
+216.962053942	Lever Press 
+217.026840705	Lever Press 
+217.105096115	Lever Press 

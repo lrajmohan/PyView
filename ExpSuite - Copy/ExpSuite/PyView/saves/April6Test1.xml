@@ -1,0 +1,21 @@
+<Experiment>
+	<info>
+		<date>2014.April.06 13.26.17</date>
+		<name>April6Test1</name>
+	</info>
+	<trialDuration>10.0</trialDuration>
+	<autoRinse do="False" for="0.043" wait="0.5" />
+	<terminator />
+	<intervals>
+		<Interval id="0" name="Interval0" type="Wait">
+			<startTime>0</startTime>
+			<duration changable="False" vary="True" varyBy="2.0">10.0</duration>
+			<action>
+				<Lever id="-1" />
+				<Begin id="-1" />
+				<End id="-1" />
+			</action>
+		</Interval>
+	</intervals>
+	<actions />
+</Experiment>

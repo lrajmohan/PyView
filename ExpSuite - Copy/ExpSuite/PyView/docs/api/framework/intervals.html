@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Intervals.py &mdash; PyView framework alpha documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="PyView framework alpha documentation" href="index.html" />
+    <link rel="next" title="Actions.py" href="actions.html" />
+    <link rel="prev" title="Welcome to PyView’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="actions.html" title="Actions.py"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to PyView’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">PyView framework alpha documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="intervals-py">
+<h1>Intervals.py<a class="headerlink" href="#intervals-py" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<span class="target" id="module-Intervals"></span><p>Intervals module</p>
+<dl class="class">
+<dt id="Intervals.Interval">
+<em class="property">class </em><tt class="descclassname">Intervals.</tt><tt class="descname">Interval</tt><big>(</big><em>duration=0</em>, <em>name=''</em><big>)</big><a class="headerlink" href="#Intervals.Interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Super class for interval objects</p>
+<p>Interval objects are WaitInt, ToneInt, RewardInt, and NogoInt</p>
+<dl class="attribute">
+<dt id="Intervals.Interval.actions">
+<tt class="descname">actions</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.actions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Links to actions to be triggered upon these 3 modes. Begin, Lever, and End</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.changable">
+<tt class="descname">changable</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.changable" title="Permalink to this definition">¶</a></dt>
+<dd><p>if this interval is changable by a ChangeIntDur action</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.completed">
+<tt class="descname">completed</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.completed" title="Permalink to this definition">¶</a></dt>
+<dd><p>if the clock has passed through this interval yet during PyView runtime</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.duration">
+<tt class="descname">duration</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.duration" title="Permalink to this definition">¶</a></dt>
+<dd><p>how long this interval last</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.maxDuration">
+<tt class="descname">maxDuration</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.maxDuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>if this interval is to be extended, how long can it possibility be</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.name">
+<tt class="descname">name</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>nickname for this interval object</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.oriDur">
+<tt class="descname">oriDur</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.oriDur" title="Permalink to this definition">¶</a></dt>
+<dd><p>original duration before its changed by random vary or ChangeIntDur</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.startTime">
+<tt class="descname">startTime</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.startTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>time interval is suppose to start at within trial time</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Intervals.Interval.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Intervals.Interval.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generalized print for Intervals</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.type">
+<tt class="descname">type</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>type of action</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.vary">
+<tt class="descname">vary</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.vary" title="Permalink to this definition">¶</a></dt>
+<dd><p>if we can allow this interval to vary by some value at random</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="Intervals.Interval.varyBy">
+<tt class="descname">varyBy</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.Interval.varyBy" title="Permalink to this definition">¶</a></dt>
+<dd><p>if vary is True, how much will be vary by.
+Vary duration D, st. D&#8217; = D + varyBy * (2*r-1); st. r : (0,1)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Intervals.NogoInt">
+<em class="property">class </em><tt class="descclassname">Intervals.</tt><tt class="descname">NogoInt</tt><big>(</big><em>duration</em>, <em>name</em><big>)</big><a class="headerlink" href="#Intervals.NogoInt" title="Permalink to this definition">¶</a></dt>
+<dd><p>If lever pressed during this interval no reward is delievered at the end</p>
+<dl class="attribute">
+<dt id="Intervals.NogoInt.ready">
+<tt class="descname">ready</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.NogoInt.ready" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is set false, if lever is pressed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Intervals.NogoInt.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Intervals.NogoInt.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generalized print for Intervals</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Intervals.RewardInt">
+<em class="property">class </em><tt class="descclassname">Intervals.</tt><tt class="descname">RewardInt</tt><big>(</big><em>duration</em>, <em>name</em><big>)</big><a class="headerlink" href="#Intervals.RewardInt" title="Permalink to this definition">¶</a></dt>
+<dd><p>If lever pressed during this interval we deliver taste</p>
+<dl class="method">
+<dt id="Intervals.RewardInt.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Intervals.RewardInt.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generalized print for Intervals</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Intervals.ToneInt">
+<em class="property">class </em><tt class="descclassname">Intervals.</tt><tt class="descname">ToneInt</tt><big>(</big><em>duration</em>, <em>name</em><big>)</big><a class="headerlink" href="#Intervals.ToneInt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tone Intervals will play a tone for its duration</p>
+<dl class="attribute">
+<dt id="Intervals.ToneInt.freq">
+<tt class="descname">freq</tt><em class="property"> = None</em><a class="headerlink" href="#Intervals.ToneInt.freq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tone frequency in Hz.
+Based on the current setup and scaling. Frequency range = [1000,11160] Hz</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Intervals.ToneInt.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Intervals.ToneInt.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>extends toString() function for ToneInterval</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Intervals.WaitInt">
+<em class="property">class </em><tt class="descclassname">Intervals.</tt><tt class="descname">WaitInt</tt><big>(</big><em>duration</em>, <em>name</em><big>)</big><a class="headerlink" href="#Intervals.WaitInt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait Interval is when nothing happens by default. It is just an allocated block of time within an experiment trial.</p>
+<dl class="method">
+<dt id="Intervals.WaitInt.toString">
+<tt class="descname">toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Intervals.WaitInt.toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generalized print for Intervals</p>
+</dd></dl>
+
+</dd></dl>
+
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to PyView&#8217;s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="actions.html"
+                        title="next chapter">Actions.py</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/intervals.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="actions.html" title="Actions.py"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to PyView’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">PyView framework alpha documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Alice Q. Wong.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1170 @@
+
+Experiment Begins .. Trial Duration: 30.5 seconds
+
+2.68795733674e-06 >>> preSuc (Wait Interval) ENTERED 
+0.5 Taste 
+
+0.500002303963 >>> rinse int (Wait Interval) ENTERED 
+5.5 Taste 
+
+5.50363719027 >>> wait (Wait Interval) ENTERED 
+- - Trial 2 - - 
+
+
+30.5075704398 >>> preSuc (Wait Interval) ENTERED 
+31.01 Taste 
+
+31.0089171065 >>> rinse int (Wait Interval) ENTERED 
+36.01 Taste 
+
+36.0125685045 >>> wait (Wait Interval) ENTERED 
+- - Trial 3 - - 
+
+
+61.0163043812 >>> preSuc (Wait Interval) ENTERED 
+61.52 Taste 
+
+61.5175404576 >>> rinse int (Wait Interval) ENTERED 
+66.52 Taste 
+
+66.5211734239 >>> wait (Wait Interval) ENTERED 
+- - Trial 4 - - 
+
+
+91.5249100686 >>> preSuc (Wait Interval) ENTERED 
+92.03 Taste 
+
+92.0261227214 >>> rinse int (Wait Interval) ENTERED 
+97.03 Taste 
+
+97.0298532222 >>> wait (Wait Interval) ENTERED 
+- - Trial 5 - - 
+
+
+122.141765558 >>> preSuc (Wait Interval) ENTERED 
+122.64 Taste 
+
+122.644195087 >>> rinse int (Wait Interval) ENTERED 
+127.68 Taste 
+
+127.676401424 >>> wait (Wait Interval) ENTERED 
+- - Trial 6 - - 
+
+
+152.7648909 >>> preSuc (Wait Interval) ENTERED 
+153.27 Taste 
+
+153.266036737 >>> rinse int (Wait Interval) ENTERED 
+158.27 Taste 
+
+158.269581769 >>> wait (Wait Interval) ENTERED 
+- - Trial 7 - - 
+
+
+183.27359297 >>> preSuc (Wait Interval) ENTERED 
+183.77 Taste 
+
+183.774670456 >>> rinse int (Wait Interval) ENTERED 
+188.78 Taste 
+
+188.778458556 >>> wait (Wait Interval) ENTERED 
+- - Trial 8 - - 
+
+
+213.781995524 >>> preSuc (Wait Interval) ENTERED 
+214.28 Taste 
+
+214.283437421 >>> rinse int (Wait Interval) ENTERED 
+219.29 Taste 
+
+219.287372975 >>> wait (Wait Interval) ENTERED 
+- - Trial 9 - - 
+
+
+244.291034741 >>> preSuc (Wait Interval) ENTERED 
+244.79 Taste 
+
+244.792131811 >>> rinse int (Wait Interval) ENTERED 
+249.8 Taste 
+
+249.795800489 >>> wait (Wait Interval) ENTERED 
+- - Trial 10 - - 
+
+
+274.799529454 >>> preSuc (Wait Interval) ENTERED 
+275.3 Taste 
+
+275.300697947 >>> rinse int (Wait Interval) ENTERED 
+280.3 Taste 
+
+280.304354721 >>> wait (Wait Interval) ENTERED 
+- - Trial 11 - - 
+
+
+305.307986152 >>> preSuc (Wait Interval) ENTERED 
+305.81 Taste 
+
+305.809104342 >>> rinse int (Wait Interval) ENTERED 
+310.81 Taste 
+
+310.812819867 >>> wait (Wait Interval) ENTERED 
+- - Trial 12 - - 
+
+
+335.81650928 >>> preSuc (Wait Interval) ENTERED 
+336.32 Taste 
+
+336.317705805 >>> rinse int (Wait Interval) ENTERED 
+341.32 Taste 
+
+341.321284629 >>> wait (Wait Interval) ENTERED 
+- - Trial 13 - - 
+
+
+366.324973658 >>> preSuc (Wait Interval) ENTERED 
+366.83 Taste 
+
+366.826111048 >>> rinse int (Wait Interval) ENTERED 
+371.83 Taste 
+
+371.829827341 >>> wait (Wait Interval) ENTERED 
+- - Trial 14 - - 
+
+
+396.833592401 >>> preSuc (Wait Interval) ENTERED 
+397.33 Taste 
+
+397.334828862 >>> rinse int (Wait Interval) ENTERED 
+402.34 Taste 
+
+402.338478724 >>> wait (Wait Interval) ENTERED 
+- - Trial 15 - - 
+
+
+427.342294087 >>> preSuc (Wait Interval) ENTERED 
+427.84 Taste 
+
+427.843529012 >>> rinse int (Wait Interval) ENTERED 
+432.85 Taste 
+
+432.847390838 >>> wait (Wait Interval) ENTERED 
+- - Trial 16 - - 
+
+
+457.851320248 >>> preSuc (Wait Interval) ENTERED 
+458.35 Taste 
+
+458.352343208 >>> rinse int (Wait Interval) ENTERED 
+463.36 Taste 
+
+463.355858288 >>> wait (Wait Interval) ENTERED 
+- - Trial 17 - - 
+
+
+488.359488182 >>> preSuc (Wait Interval) ENTERED 
+488.86 Taste 
+
+488.860545317 >>> rinse int (Wait Interval) ENTERED 
+493.86 Taste 
+
+493.864189804 >>> wait (Wait Interval) ENTERED 
+- - Trial 18 - - 
+
+
+518.867754035 >>> preSuc (Wait Interval) ENTERED 
+519.37 Taste 
+
+519.368825762 >>> rinse int (Wait Interval) ENTERED 
+524.37 Taste 
+
+524.372527847 >>> wait (Wait Interval) ENTERED 
+- - Trial 19 - - 
+
+
+549.376126638 >>> preSuc (Wait Interval) ENTERED 
+549.88 Taste 
+
+549.877113886 >>> rinse int (Wait Interval) ENTERED 
+554.88 Taste 
+
+554.880762597 >>> wait (Wait Interval) ENTERED 
+- - Trial 20 - - 
+
+
+579.884377131 >>> preSuc (Wait Interval) ENTERED 
+580.39 Taste 
+
+580.385531417 >>> rinse int (Wait Interval) ENTERED 
+585.39 Taste 
+
+585.389183583 >>> wait (Wait Interval) ENTERED 
+- - Trial 21 - - 
+
+
+610.39290602 >>> preSuc (Wait Interval) ENTERED 
+610.89 Taste 
+
+610.894114449 >>> rinse int (Wait Interval) ENTERED 
+615.9 Taste 
+
+615.897744727 >>> wait (Wait Interval) ENTERED 
+- - Trial 22 - - 
+
+
+640.901342366 >>> preSuc (Wait Interval) ENTERED 
+641.4 Taste 
+
+641.402742408 >>> rinse int (Wait Interval) ENTERED 
+646.41 Taste 
+
+646.407137986 >>> wait (Wait Interval) ENTERED 
+- - Trial 23 - - 
+
+
+671.410996741 >>> preSuc (Wait Interval) ENTERED 
+671.91 Taste 
+
+671.912167538 >>> rinse int (Wait Interval) ENTERED 
+676.92 Taste 
+
+676.91571257 >>> wait (Wait Interval) ENTERED 
+- - Trial 24 - - 
+
+
+701.919464958 >>> preSuc (Wait Interval) ENTERED 
+702.42 Taste 
+
+702.420611948 >>> rinse int (Wait Interval) ENTERED 
+707.42 Taste 
+
+707.424389296 >>> wait (Wait Interval) ENTERED 
+- - Trial 25 - - 
+
+
+732.428151668 >>> preSuc (Wait Interval) ENTERED 
+732.93 Taste 
+
+732.929301346 >>> rinse int (Wait Interval) ENTERED 
+737.93 Taste 
+
+737.933064486 >>> wait (Wait Interval) ENTERED 
+- - Trial 26 - - 
+
+
+762.936812267 >>> preSuc (Wait Interval) ENTERED 
+763.44 Taste 
+
+763.437990744 >>> rinse int (Wait Interval) ENTERED 
+768.44 Taste 
+
+768.44240245 >>> wait (Wait Interval) ENTERED 
+- - Trial 27 - - 
+
+
+793.447348676 >>> preSuc (Wait Interval) ENTERED 
+793.95 Taste 
+
+793.948651567 >>> rinse int (Wait Interval) ENTERED 
+798.95 Taste 
+
+798.952380148 >>> wait (Wait Interval) ENTERED 
+- - Trial 28 - - 
+
+
+823.956484659 >>> preSuc (Wait Interval) ENTERED 
+824.46 Taste 
+
+824.457600161 >>> rinse int (Wait Interval) ENTERED 
+829.46 Taste 
+
+829.461343718 >>> wait (Wait Interval) ENTERED 
+- - Trial 29 - - 
+
+
+854.464912173 >>> preSuc (Wait Interval) ENTERED 
+854.97 Taste 
+
+854.967668865 >>> rinse int (Wait Interval) ENTERED 
+859.97 Taste 
+
+859.9717872 >>> wait (Wait Interval) ENTERED 
+- - Trial 30 - - 
+
+
+884.975535748 >>> preSuc (Wait Interval) ENTERED 
+885.48 Taste 
+
+885.476654323 >>> rinse int (Wait Interval) ENTERED 
+890.48 Taste 
+
+890.481396647 >>> wait (Wait Interval) ENTERED 
+- - Trial 31 - - 
+
+
+915.485127532 >>> preSuc (Wait Interval) ENTERED 
+915.99 Taste 
+
+915.986291034 >>> rinse int (Wait Interval) ENTERED 
+920.99 Taste 
+
+920.990886289 >>> wait (Wait Interval) ENTERED 
+- - Trial 32 - - 
+
+
+945.994507351 >>> preSuc (Wait Interval) ENTERED 
+946.5 Taste 
+
+946.495661637 >>> rinse int (Wait Interval) ENTERED 
+951.5 Taste 
+
+951.500940401 >>> wait (Wait Interval) ENTERED 
+- - Trial 33 - - 
+
+
+976.504574903 >>> preSuc (Wait Interval) ENTERED 
+977.01 Taste 
+
+977.005847075 >>> rinse int (Wait Interval) ENTERED 
+982.01 Taste 
+
+982.010832852 >>> wait (Wait Interval) ENTERED 
+- - Trial 34 - - 
+
+
+1007.01451343 >>> preSuc (Wait Interval) ENTERED 
+1007.52 Taste 
+
+1007.51585818 >>> rinse int (Wait Interval) ENTERED 
+1012.52 Taste 
+
+1012.52058361 >>> wait (Wait Interval) ENTERED 
+- - Trial 35 - - 
+
+
+1037.52444467 >>> preSuc (Wait Interval) ENTERED 
+1038.03 Taste 
+
+1038.02570532 >>> rinse int (Wait Interval) ENTERED 
+1043.03 Taste 
+
+1043.03052713 >>> wait (Wait Interval) ENTERED 
+- - Trial 36 - - 
+
+
+1068.03437859 >>> preSuc (Wait Interval) ENTERED 
+1068.54 Taste 
+
+1068.5354868 >>> rinse int (Wait Interval) ENTERED 
+1073.54 Taste 
+
+1073.54162532 >>> wait (Wait Interval) ENTERED 
+- - Trial 37 - - 
+
+
+1098.5464095 >>> preSuc (Wait Interval) ENTERED 
+1099.05 Taste 
+
+1099.04752232 >>> rinse int (Wait Interval) ENTERED 
+1104.05 Taste 
+
+1104.05217248 >>> wait (Wait Interval) ENTERED 
+- - Trial 38 - - 
+
+
+1129.05799383 >>> preSuc (Wait Interval) ENTERED 
+1129.56 Taste 
+
+1129.55911279 >>> rinse int (Wait Interval) ENTERED 
+1134.56 Taste 
+
+1134.56375105 >>> wait (Wait Interval) ENTERED 
+- - Trial 39 - - 
+
+
+1159.56739131 >>> preSuc (Wait Interval) ENTERED 
+1160.07 Taste 
+
+1160.06848263 >>> rinse int (Wait Interval) ENTERED 
+1165.07 Taste 
+
+1165.07298649 >>> wait (Wait Interval) ENTERED 
+- - Trial 40 - - 
+
+
+1190.0765657 >>> preSuc (Wait Interval) ENTERED 
+1190.58 Taste 
+
+1190.57785707 >>> rinse int (Wait Interval) ENTERED 
+1195.58 Taste 
+
+1195.58264893 >>> wait (Wait Interval) ENTERED 
+- - Trial 41 - - 
+
+
+1220.58655491 >>> preSuc (Wait Interval) ENTERED 
+1221.09 Taste 
+
+1221.08770229 >>> rinse int (Wait Interval) ENTERED 
+1226.09 Taste 
+
+1226.09272685 >>> wait (Wait Interval) ENTERED 
+- - Trial 42 - - 
+
+
+1251.09640897 >>> preSuc (Wait Interval) ENTERED 
+1251.6 Taste 
+
+1251.59758053 >>> rinse int (Wait Interval) ENTERED 
+1256.6 Taste 
+
+1256.60276982 >>> wait (Wait Interval) ENTERED 
+- - Trial 43 - - 
+
+
+1281.60636401 >>> preSuc (Wait Interval) ENTERED 
+1282.11 Taste 
+
+1282.10750908 >>> rinse int (Wait Interval) ENTERED 
+1287.12 Taste 
+
+1287.11602453 >>> wait (Wait Interval) ENTERED 
+- - Trial 44 - - 
+
+
+1312.11973045 >>> preSuc (Wait Interval) ENTERED 
+1312.62 Taste 
+
+1312.62090509 >>> rinse int (Wait Interval) ENTERED 
+1317.63 Taste 
+
+1317.62560364 >>> wait (Wait Interval) ENTERED 
+- - Trial 45 - - 
+
+
+1342.6292992 >>> preSuc (Wait Interval) ENTERED 
+1343.13 Taste 
+
+1343.13046193 >>> rinse int (Wait Interval) ENTERED 
+1348.14 Taste 
+
+1348.13541123 >>> wait (Wait Interval) ENTERED 
+- - Trial 46 - - 
+
+
+1373.13948425 >>> preSuc (Wait Interval) ENTERED 
+1373.64 Taste 
+
+1373.64074413 >>> rinse int (Wait Interval) ENTERED 
+1378.65 Taste 
+
+1378.64582821 >>> wait (Wait Interval) ENTERED 
+- - Trial 47 - - 
+
+
+1403.64949612 >>> preSuc (Wait Interval) ENTERED 
+1404.15 Taste 
+
+1404.1508954 >>> rinse int (Wait Interval) ENTERED 
+1409.16 Taste 
+
+1409.15662919 >>> wait (Wait Interval) ENTERED 
+- - Trial 48 - - 
+
+
+1434.1602756 >>> preSuc (Wait Interval) ENTERED 
+1434.66 Taste 
+
+1434.66141261 >>> rinse int (Wait Interval) ENTERED 
+1439.67 Taste 
+
+1439.6661365 >>> wait (Wait Interval) ENTERED 
+- - Trial 49 - - 
+
+
+1464.66968575 >>> preSuc (Wait Interval) ENTERED 
+1465.17 Taste 
+
+1465.17075019 >>> rinse int (Wait Interval) ENTERED 
+1470.18 Taste 
+
+1470.17523831 >>> wait (Wait Interval) ENTERED 
+- - Trial 50 - - 
+
+
+1495.17882865 >>> preSuc (Wait Interval) ENTERED 
+1495.68 Taste 
+
+1495.67994377 >>> rinse int (Wait Interval) ENTERED 
+1500.68 Taste 
+
+1500.6845467 >>> wait (Wait Interval) ENTERED 
+- - Trial 51 - - 
+
+
+1525.68866849 >>> preSuc (Wait Interval) ENTERED 
+1526.19 Taste 
+
+1526.18983391 >>> rinse int (Wait Interval) ENTERED 
+1531.19 Taste 
+
+1531.19483083 >>> wait (Wait Interval) ENTERED 
+- - Trial 52 - - 
+
+
+1556.19855096 >>> preSuc (Wait Interval) ENTERED 
+1556.7 Taste 
+
+1556.69968912 >>> rinse int (Wait Interval) ENTERED 
+1561.7 Taste 
+
+1561.70481736 >>> wait (Wait Interval) ENTERED 
+- - Trial 53 - - 
+
+
+1586.7087675 >>> preSuc (Wait Interval) ENTERED 
+1587.21 Taste 
+
+1587.21024588 >>> rinse int (Wait Interval) ENTERED 
+1592.22 Taste 
+
+1592.21501508 >>> wait (Wait Interval) ENTERED 
+- - Trial 54 - - 
+
+
+1617.21880318 >>> preSuc (Wait Interval) ENTERED 
+1617.72 Taste 
+
+1617.72019516 >>> rinse int (Wait Interval) ENTERED 
+1622.72 Taste 
+
+1622.72493941 >>> wait (Wait Interval) ENTERED 
+- - Trial 55 - - 
+
+
+1647.72885038 >>> preSuc (Wait Interval) ENTERED 
+1648.23 Taste 
+
+1648.23006841 >>> rinse int (Wait Interval) ENTERED 
+1653.23 Taste 
+
+1653.23492286 >>> wait (Wait Interval) ENTERED 
+- - Trial 56 - - 
+
+
+1678.23904312 >>> preSuc (Wait Interval) ENTERED 
+1678.74 Taste 
+
+1678.7402646 >>> rinse int (Wait Interval) ENTERED 
+1683.75 Taste 
+
+1683.74513365 >>> wait (Wait Interval) ENTERED 
+- - Trial 57 - - 
+
+
+1708.74886415 >>> preSuc (Wait Interval) ENTERED 
+1709.25 Taste 
+
+1709.24999578 >>> rinse int (Wait Interval) ENTERED 
+1714.25 Taste 
+
+1714.25458566 >>> wait (Wait Interval) ENTERED 
+- - Trial 58 - - 
+
+
+1739.25813145 >>> preSuc (Wait Interval) ENTERED 
+1739.76 Taste 
+
+1739.75923774 >>> rinse int (Wait Interval) ENTERED 
+1744.76 Taste 
+
+1744.76410294 >>> wait (Wait Interval) ENTERED 
+- - Trial 59 - - 
+
+
+1769.76877769 >>> preSuc (Wait Interval) ENTERED 
+1770.27 Taste 
+
+1770.26982369 >>> rinse int (Wait Interval) ENTERED 
+1775.27 Taste 
+
+1775.27460863 >>> wait (Wait Interval) ENTERED 
+- - Trial 60 - - 
+
+
+1800.27829037 >>> preSuc (Wait Interval) ENTERED 
+1800.78 Taste 
+
+1800.77941739 >>> rinse int (Wait Interval) ENTERED 
+1805.78 Taste 
+
+1805.78425302 >>> wait (Wait Interval) ENTERED 
+- - Trial 61 - - 
+
+
+1830.78804612 >>> preSuc (Wait Interval) ENTERED 
+1831.29 Taste 
+
+1831.28910133 >>> rinse int (Wait Interval) ENTERED 
+1836.29 Taste 
+
+1836.29420615 >>> wait (Wait Interval) ENTERED 
+- - Trial 62 - - 
+
+
+1861.29992266 >>> preSuc (Wait Interval) ENTERED 
+1861.8 Taste 
+
+1861.8011476 >>> rinse int (Wait Interval) ENTERED 
+1866.81 Taste 
+
+1866.80728651 >>> wait (Wait Interval) ENTERED 
+- - Trial 63 - - 
+
+
+1891.81097785 >>> preSuc (Wait Interval) ENTERED 
+1892.31 Taste 
+
+1892.31213905 >>> rinse int (Wait Interval) ENTERED 
+1897.32 Taste 
+
+1897.31693551 >>> wait (Wait Interval) ENTERED 
+- - Trial 64 - - 
+
+
+1922.32059574 >>> preSuc (Wait Interval) ENTERED 
+1922.82 Taste 
+
+1922.82172353 >>> rinse int (Wait Interval) ENTERED 
+1927.83 Taste 
+
+1927.82650925 >>> wait (Wait Interval) ENTERED 
+- - Trial 65 - - 
+
+
+1952.83016679 >>> preSuc (Wait Interval) ENTERED 
+1953.33 Taste 
+
+1953.33151269 >>> rinse int (Wait Interval) ENTERED 
+1958.34 Taste 
+
+1958.34197384 >>> wait (Wait Interval) ENTERED 
+- - Trial 66 - - 
+
+
+1983.34664935 >>> preSuc (Wait Interval) ENTERED 
+1983.85 Taste 
+
+1983.84794033 >>> rinse int (Wait Interval) ENTERED 
+1988.85 Taste 
+
+1988.85286851 >>> wait (Wait Interval) ENTERED 
+- - Trial 67 - - 
+
+
+2013.85644772 >>> preSuc (Wait Interval) ENTERED 
+2014.36 Taste 
+
+2014.35748489 >>> rinse int (Wait Interval) ENTERED 
+2019.36 Taste 
+
+2019.36215003 >>> wait (Wait Interval) ENTERED 
+- - Trial 68 - - 
+
+
+2044.36749138 >>> preSuc (Wait Interval) ENTERED 
+2044.87 Taste 
+
+2044.86859959 >>> rinse int (Wait Interval) ENTERED 
+2049.87 Taste 
+
+2049.87309232 >>> wait (Wait Interval) ENTERED 
+- - Trial 69 - - 
+
+
+2074.87670071 >>> preSuc (Wait Interval) ENTERED 
+2075.38 Taste 
+
+2075.37779279 >>> rinse int (Wait Interval) ENTERED 
+2080.38 Taste 
+
+2080.38240647 >>> wait (Wait Interval) ENTERED 
+- - Trial 70 - - 
+
+
+2105.3861435 >>> preSuc (Wait Interval) ENTERED 
+2105.89 Taste 
+
+2105.88735232 >>> rinse int (Wait Interval) ENTERED 
+2110.89 Taste 
+
+2110.89216184 >>> wait (Wait Interval) ENTERED 
+- - Trial 71 - - 
+
+
+2135.89572262 >>> preSuc (Wait Interval) ENTERED 
+2136.4 Taste 
+
+2136.39683735 >>> rinse int (Wait Interval) ENTERED 
+2141.4 Taste 
+
+2141.40191912 >>> wait (Wait Interval) ENTERED 
+- - Trial 72 - - 
+
+
+2166.40572105 >>> preSuc (Wait Interval) ENTERED 
+2166.91 Taste 
+
+2166.90691412 >>> rinse int (Wait Interval) ENTERED 
+2171.91 Taste 
+
+2171.91179583 >>> wait (Wait Interval) ENTERED 
+- - Trial 73 - - 
+
+
+2196.91556358 >>> preSuc (Wait Interval) ENTERED 
+2197.42 Taste 
+
+2197.41671057 >>> rinse int (Wait Interval) ENTERED 
+2202.42 Taste 
+
+2202.4217743 >>> wait (Wait Interval) ENTERED 
+- - Trial 74 - - 
+
+
+2227.42548445 >>> preSuc (Wait Interval) ENTERED 
+2227.93 Taste 
+
+2227.9266276 >>> rinse int (Wait Interval) ENTERED 
+2232.93 Taste 
+
+2232.93136762 >>> wait (Wait Interval) ENTERED 
+- - Trial 75 - - 
+
+
+2257.93496833 >>> preSuc (Wait Interval) ENTERED 
+2258.44 Taste 
+
+2258.43616639 >>> rinse int (Wait Interval) ENTERED 
+2263.44 Taste 
+
+2263.44217052 >>> wait (Wait Interval) ENTERED 
+- - Trial 76 - - 
+
+
+2288.44584611 >>> preSuc (Wait Interval) ENTERED 
+2288.95 Taste 
+
+2288.94713249 >>> rinse int (Wait Interval) ENTERED 
+2293.95 Taste 
+
+2293.95167782 >>> wait (Wait Interval) ENTERED 
+- - Trial 77 - - 
+
+
+2318.95519022 >>> preSuc (Wait Interval) ENTERED 
+2319.46 Taste 
+
+2319.45621202 >>> rinse int (Wait Interval) ENTERED 
+2324.46 Taste 
+
+2324.4607516 >>> wait (Wait Interval) ENTERED 
+- - Trial 78 - - 
+
+
+2349.46429778 >>> preSuc (Wait Interval) ENTERED 
+2349.97 Taste 
+
+2349.96534724 >>> rinse int (Wait Interval) ENTERED 
+2354.97 Taste 
+
+2354.9714489 >>> wait (Wait Interval) ENTERED 
+- - Trial 79 - - 
+
+
+2379.9750546 >>> preSuc (Wait Interval) ENTERED 
+2380.48 Taste 
+
+2380.4761198 >>> rinse int (Wait Interval) ENTERED 
+2385.48 Taste 
+
+2385.48074655 >>> wait (Wait Interval) ENTERED 
+- - Trial 80 - - 
+
+
+2410.48441446 >>> preSuc (Wait Interval) ENTERED 
+2410.99 Taste 
+
+2410.98547543 >>> rinse int (Wait Interval) ENTERED 
+2415.99 Taste 
+
+2415.98992938 >>> wait (Wait Interval) ENTERED 
+- - Trial 81 - - 
+
+
+2440.99354621 >>> preSuc (Wait Interval) ENTERED 
+2441.49 Taste 
+
+2441.49465864 >>> rinse int (Wait Interval) ENTERED 
+2446.5 Taste 
+
+2446.49924968 >>> wait (Wait Interval) ENTERED 
+- - Trial 82 - - 
+
+
+2471.50298555 >>> preSuc (Wait Interval) ENTERED 
+2472.0 Taste 
+
+2472.00405843 >>> rinse int (Wait Interval) ENTERED 
+2477.01 Taste 
+
+2477.00924773 >>> wait (Wait Interval) ENTERED 
+- - Trial 83 - - 
+
+
+2502.01299819 >>> preSuc (Wait Interval) ENTERED 
+2502.51 Taste 
+
+2502.51410448 >>> rinse int (Wait Interval) ENTERED 
+2507.52 Taste 
+
+2507.5190365 >>> wait (Wait Interval) ENTERED 
+- - Trial 84 - - 
+
+
+2532.52272092 >>> preSuc (Wait Interval) ENTERED 
+2533.02 Taste 
+
+2533.02405338 >>> rinse int (Wait Interval) ENTERED 
+2538.03 Taste 
+
+2538.0290238 >>> wait (Wait Interval) ENTERED 
+- - Trial 85 - - 
+
+
+2563.03267404 >>> preSuc (Wait Interval) ENTERED 
+2563.53 Taste 
+
+2563.53382449 >>> rinse int (Wait Interval) ENTERED 
+2568.54 Taste 
+
+2568.53927221 >>> wait (Wait Interval) ENTERED 
+- - Trial 86 - - 
+
+
+2593.54315093 >>> preSuc (Wait Interval) ENTERED 
+2594.04 Taste 
+
+2594.04422227 >>> rinse int (Wait Interval) ENTERED 
+2599.05 Taste 
+
+2599.04897497 >>> wait (Wait Interval) ENTERED 
+- - Trial 87 - - 
+
+
+2624.05265632 >>> preSuc (Wait Interval) ENTERED 
+2624.55 Taste 
+
+2624.55375185 >>> rinse int (Wait Interval) ENTERED 
+2629.56 Taste 
+
+2629.55839856 >>> wait (Wait Interval) ENTERED 
+- - Trial 88 - - 
+
+
+2654.56196394 >>> preSuc (Wait Interval) ENTERED 
+2655.06 Taste 
+
+2655.06304028 >>> rinse int (Wait Interval) ENTERED 
+2660.07 Taste 
+
+2660.0687783 >>> wait (Wait Interval) ENTERED 
+- - Trial 89 - - 
+
+
+2685.0722953 >>> preSuc (Wait Interval) ENTERED 
+2685.57 Taste 
+
+2685.5733486 >>> rinse int (Wait Interval) ENTERED 
+2690.58 Taste 
+
+2690.57800491 >>> wait (Wait Interval) ENTERED 
+- - Trial 90 - - 
+
+
+2715.58176382 >>> preSuc (Wait Interval) ENTERED 
+2716.08 Taste 
+
+2716.08285052 >>> rinse int (Wait Interval) ENTERED 
+2721.09 Taste 
+
+2721.08770459 >>> wait (Wait Interval) ENTERED 
+- - Trial 91 - - 
+
+
+2746.09144968 >>> preSuc (Wait Interval) ENTERED 
+2746.59 Taste 
+
+2746.59263661 >>> rinse int (Wait Interval) ENTERED 
+2751.6 Taste 
+
+2751.59712972 >>> wait (Wait Interval) ENTERED 
+- - Trial 92 - - 
+
+
+2776.60091513 >>> preSuc (Wait Interval) ENTERED 
+2777.1 Taste 
+
+2777.10208171 >>> rinse int (Wait Interval) ENTERED 
+2782.11 Taste 
+
+2782.10716848 >>> wait (Wait Interval) ENTERED 
+- - Trial 93 - - 
+
+
+2807.11092893 >>> preSuc (Wait Interval) ENTERED 
+2807.61 Taste 
+
+2807.612165 >>> rinse int (Wait Interval) ENTERED 
+2812.62 Taste 
+
+2812.61705286 >>> wait (Wait Interval) ENTERED 
+- - Trial 94 - - 
+
+
+2837.6208352 >>> preSuc (Wait Interval) ENTERED 
+2838.12 Taste 
+
+2838.12198181 >>> rinse int (Wait Interval) ENTERED 
+2843.13 Taste 
+
+2843.12676061 >>> wait (Wait Interval) ENTERED 
+- - Trial 95 - - 
+
+
+2868.13052682 >>> preSuc (Wait Interval) ENTERED 
+2868.63 Taste 
+
+2868.63174984 >>> rinse int (Wait Interval) ENTERED 
+2873.64 Taste 
+
+2873.63672602 >>> wait (Wait Interval) ENTERED 
+- - Trial 96 - - 
+
+
+2898.64153555 >>> preSuc (Wait Interval) ENTERED 
+2899.14 Taste 
+
+2899.14286916 >>> rinse int (Wait Interval) ENTERED 
+2904.15 Taste 
+
+2904.15276391 >>> wait (Wait Interval) ENTERED 
+- - Trial 97 - - 
+
+
+2929.15630779 >>> preSuc (Wait Interval) ENTERED 
+2929.66 Taste 
+
+2929.6584428 >>> rinse int (Wait Interval) ENTERED 
+2934.66 Taste 
+
+2934.66290749 >>> wait (Wait Interval) ENTERED 
+- - Trial 98 - - 
+
+
+2959.66650245 >>> preSuc (Wait Interval) ENTERED 
+2960.17 Taste 
+
+2960.16859214 >>> rinse int (Wait Interval) ENTERED 
+2965.17 Taste 
+
+2965.17325421 >>> wait (Wait Interval) ENTERED 
+- - Trial 99 - - 
+
+
+2990.17682036 >>> preSuc (Wait Interval) ENTERED 
+2990.68 Taste 
+
+2990.67786828 >>> rinse int (Wait Interval) ENTERED 
+2995.68 Taste 
+
+2995.68260139 >>> wait (Wait Interval) ENTERED 
+- - Trial 100 - - 
+
+
+3020.68627967 >>> preSuc (Wait Interval) ENTERED 
+3021.19 Taste 
+
+3021.18736407 >>> rinse int (Wait Interval) ENTERED 
+3026.19 Taste 
+
+3026.19216706 >>> wait (Wait Interval) ENTERED 
+- - Trial 101 - - 
+
+
+3051.19578505 >>> preSuc (Wait Interval) ENTERED 
+3051.7 Taste 
+
+3051.69686408 >>> rinse int (Wait Interval) ENTERED 
+3056.7 Taste 
+
+3056.70189516 >>> wait (Wait Interval) ENTERED 
+- - Trial 102 - - 
+
+
+3081.70547091 >>> preSuc (Wait Interval) ENTERED 
+3082.21 Taste 
+
+3082.20669163 >>> rinse int (Wait Interval) ENTERED 
+3087.21 Taste 
+
+3087.21162135 >>> wait (Wait Interval) ENTERED 
+- - Trial 103 - - 
+
+
+3112.21526238 >>> preSuc (Wait Interval) ENTERED 
+3112.72 Taste 
+
+3112.71652341 >>> rinse int (Wait Interval) ENTERED 
+3117.72 Taste 
+
+3117.72136404 >>> wait (Wait Interval) ENTERED 
+- - Trial 104 - - 
+
+
+3142.72518094 >>> preSuc (Wait Interval) ENTERED 
+3143.23 Taste 
+
+3143.22631372 >>> rinse int (Wait Interval) ENTERED 
+3148.23 Taste 
+
+3148.23124689 >>> wait (Wait Interval) ENTERED 
+- - Trial 105 - - 
+
+
+3173.2350227 >>> preSuc (Wait Interval) ENTERED 
+3173.74 Taste 
+
+3173.736167 >>> rinse int (Wait Interval) ENTERED 
+3178.74 Taste 
+
+3178.7424069 >>> wait (Wait Interval) ENTERED 
+- - Trial 106 - - 
+
+
+3203.74607481 >>> preSuc (Wait Interval) ENTERED 
+3204.25 Taste 
+
+3204.24726251 >>> rinse int (Wait Interval) ENTERED 
+3209.25 Taste 
+
+3209.25184087 >>> wait (Wait Interval) ENTERED 
+- - Trial 107 - - 
+
+
+3234.25568618 >>> preSuc (Wait Interval) ENTERED 
+3234.76 Taste 
+
+3234.75674792 >>> rinse int (Wait Interval) ENTERED 
+3239.76 Taste 
+
+3239.76248595 >>> wait (Wait Interval) ENTERED 
+- - Trial 108 - - 
+
+
+3264.76607283 >>> preSuc (Wait Interval) ENTERED 
+3265.27 Taste 
+
+3265.26816906 >>> rinse int (Wait Interval) ENTERED 
+3270.27 Taste 
+
+3270.27295324 >>> wait (Wait Interval) ENTERED 
+- - Trial 109 - - 
+
+
+3295.27653398 >>> preSuc (Wait Interval) ENTERED 
+3295.78 Taste 
+
+3295.77762951 >>> rinse int (Wait Interval) ENTERED 
+3300.78 Taste 
+
+3300.78228314 >>> wait (Wait Interval) ENTERED 
+- - Trial 110 - - 
+
+
+3325.78612922 >>> preSuc (Wait Interval) ENTERED 
+3326.29 Taste 
+
+3326.28723282 >>> rinse int (Wait Interval) ENTERED 
+3331.29 Taste 
+
+3331.2922209 >>> wait (Wait Interval) ENTERED 
+- - Trial 111 - - 
+
+
+3356.29584849 >>> preSuc (Wait Interval) ENTERED 
+3356.8 Taste 
+
+3356.79694325 >>> rinse int (Wait Interval) ENTERED 
+3361.8 Taste 
+
+3361.80192903 >>> wait (Wait Interval) ENTERED 
+- - Trial 112 - - 
+
+
+3386.80575246 >>> preSuc (Wait Interval) ENTERED 
+3387.31 Taste 
+
+3387.30690751 >>> rinse int (Wait Interval) ENTERED 
+3392.31 Taste 
+
+3392.31173163 >>> wait (Wait Interval) ENTERED 
+- - Trial 113 - - 
+
+
+3417.31542642 >>> preSuc (Wait Interval) ENTERED 
+3417.82 Taste 
+
+3417.81666672 >>> rinse int (Wait Interval) ENTERED 
+3422.82 Taste 
+
+3422.82157262 >>> wait (Wait Interval) ENTERED 
+- - Trial 114 - - 
+
+
+3447.82533576 >>> preSuc (Wait Interval) ENTERED 
+3448.33 Taste 
+
+3448.32657914 >>> rinse int (Wait Interval) ENTERED 
+3453.33 Taste 
+
+3453.33152191 >>> wait (Wait Interval) ENTERED 
+- - Trial 115 - - 
+
+
+3478.33527813 >>> preSuc (Wait Interval) ENTERED 
+3478.84 Taste 
+
+3478.83655376 >>> rinse int (Wait Interval) ENTERED 
+3483.84 Taste 
+
+3483.8425529 >>> wait (Wait Interval) ENTERED 
+- - Trial 116 - - 
+
+
+3508.84636097 >>> preSuc (Wait Interval) ENTERED 
+3509.35 Taste 
+
+3509.34773835 >>> rinse int (Wait Interval) ENTERED 
+3514.35 Taste 
+
+3514.35268266 >>> wait (Wait Interval) ENTERED 
+- - Trial 117 - - 
+
+
+3539.35728291 >>> preSuc (Wait Interval) ENTERED 
+3539.86 Taste 
+
+3539.8583577 >>> rinse int (Wait Interval) ENTERED 
+3544.86 Taste 
+
+3544.86289536 >>> wait (Wait Interval) ENTERED 

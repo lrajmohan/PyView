@@ -1,0 +1,7 @@
+2.00056309124	Tone Delivery 
+3.48724820565	Lever Press 
+3.48891193204	Taste Delivery 
+5.58654019453	Tone Delivery 
+6.90452086325	Lever Press 
+6.90613489482	Taste Delivery 
+8.91391178331	Tone Delivery 

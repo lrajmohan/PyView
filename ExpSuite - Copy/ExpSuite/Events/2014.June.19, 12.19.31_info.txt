@@ -1,0 +1,22 @@
+EXPERIMENT DESCRIPTION : toneexp1
+EXPERIMENT FILE : C:\Users\raj\PycharmProjects\pycharm_pyview\ExpSuite - Copy\ExpSuite\PyView\saves\toneexp1.xml 
+Trial Duration = 	9.0
+Intervals Sequence
+Interval0 = 	1.0	2000 Hz  
+Interval1 = 	1.0 
+Interval2 = 	1.0	4000 Hz  
+Interval3 = 	1.0 
+Interval4 = 	1.0	10000 Hz  
+Interval5 = 	1.0 
+Interval6 = 	1.0	4200 Hz  
+Interval7 = 	1.0 
+Interval8 = 	1.0	8000 Hz  
+
+Actions Detail 
+
+Experiment Run Summary 
+Total experiment runtime = 5.72887487954
+Trials = 1
+Number of Lever Presses = 0
+Rewards = 0
+Manual Rewards = 0
