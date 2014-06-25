@@ -1,6 +1,6 @@
 #PyView
 ======
-
+This is a project written in Python and is used for learning and decision making in the dept.of Neuroscience at Stony Brook University 
 ####PyView
 I. Setup Notes
 
