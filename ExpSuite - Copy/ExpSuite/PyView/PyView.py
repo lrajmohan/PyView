@@ -465,11 +465,7 @@ class MainFrame(wx.Frame):
         for i in range( len(timeStamps) ):
             ttlcode = 'xxxxxxxx'
             try:
-                print 'timestampfull::',timeStamps
-                print 'timestamp[i][0]::',timeStamps[i][0]
                 ttlcode = uv.ttlMap[timeStamps[i][0]]
-                print 'Tone::',uv.ToneNames ##raj
-                print 'Tonefreq::',uv.ToneFreq ##raj
             except KeyError:
                 if timeStamps[i][0] in ('Taste Delivery','Tone Delivery'):
                     try:
@@ -638,11 +634,9 @@ def bindExp():
         global timeStamps, toneThread
         #send tone
         i = freq2int(self.freq)
-        print'freQ:',self.freq
         a = int2bi8(i)
         try:
             di = uv.ToneFreq.index(self.freq)
-            print 'di:::',di #raj
         except IndexError:
             di = 0
         toneThread = neu.PlayToneThread(X.intervalList[derby].duration,a,di)

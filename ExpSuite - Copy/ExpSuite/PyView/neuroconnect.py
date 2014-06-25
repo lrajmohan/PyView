@@ -98,8 +98,6 @@ class PlayToneThread (Thread):
     def run(self):
         flag['tone'] = False
         channelInUse = toneChan
-        print'size of toneTTL',len(toneTTLChan)
-        print'ti:',self.ti
         if(len(toneTTLChan)-1 <self.ti):
             sizeDiff = (self.ti+1)-len(toneTTLChan)
             print('out of boundd::',sizeDiff)

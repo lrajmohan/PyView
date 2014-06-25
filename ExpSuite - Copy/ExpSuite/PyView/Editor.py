@@ -503,7 +503,7 @@ class CtrlPanel(wx.Panel):
         freqGrid2 = wx.GridSizer(2,2,0,0)
         self.freq3 = wx.TextCtrl(self, size=(40, -1))
         self.freq3.SetValue(str(uv.ToneFreq[2]))
-        self.Bind(wx.EVT_TEXT,self.updateFreq3,self.freq3,'freq1')
+        self.Bind(wx.EVT_TEXT,self.updateFreq3,self.freq3)
         self.freq4 = wx.TextCtrl(self, size=(40, -1))
         self.freq4.SetValue(str(uv.ToneFreq[3]))
         self.Bind(wx.EVT_TEXT,self.updateFreq4,self.freq4)
@@ -569,6 +569,7 @@ class CtrlPanel(wx.Panel):
             except ValueError:
                 print "Please enter a numeric Freq."
     def updateFreq3(self,evt):
+            print self.Label
             try:
                 d = int(self.freq3.GetValue())
                 uv.ToneFreq[2]=d

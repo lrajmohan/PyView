@@ -124,7 +124,7 @@ class GraphPanel(wx.Panel):
         
         self.axes.legend((self.sbs['Lever'].getPlot(self.axes),self.sbs['Mark'].getPlot(self.axes),
                           self.sbs['aTaste1'].getPlot(self.axes),self.sbs['mTaste1'].getPlot(self.axes)),
-                         ("Lever Press","Time Marked", "Reward Given","Manual Reward"),
+                         ("Lever Press","Time Marked", "Reward","Manual Reward"),
                          prop=LText, fancybox=True, bbox_to_anchor=(0., 1.02, 1., .102), loc=1, ncol=2, mode="expand", borderaxespad=0)
         
         self.canvas = FigureCanvas(self, -1, self.figure)
@@ -366,7 +366,6 @@ class MainPanel(wx.Panel):
         #self.quote.SetLabel('This is an experimentThis is an experimentThis is an experimen') #raj- label diplayed in the GUI
         self.quote.SetLabel(X.name) #raj- label diplayed in the GUI
         #self.Layout()
-        print 'name::',X.name
         xsizer = wx.BoxSizer(wx.VERTICAL)
         if self.xPanel.intervalGroup!=None:
             self.xPanel.intervalGroup.Clear(True)
