@@ -1,0 +1,107 @@
+Error while running Pyview on Mac:
+
+2014-07-11 12:59:15.373 Python[8900:9a13] An uncaught exception was raised
+2014-07-11 12:59:15.373 Python[8900:9a13] NSMutableRLEArray replaceObjectsInRange:withObject:length:: Out of bounds
+2014-07-11 12:59:15.374 Python[8900:9a13] (
+	0   CoreFoundation                      0x00007fff8c0ed25c __exceptionPreprocess + 172
+	1   libobjc.A.dylib                     0x00007fff936c0e75 objc_exception_throw + 43
+	2   CoreFoundation                      0x00007fff8c0ed10c +[NSException raise:format:] + 204
+	3   Foundation                          0x00007fff8accca05 -[NSMutableRLEArray replaceObjectsInRange:withObject:length:] + 140
+	4   AppKit                              0x00007fff894c9630 -[NSLayoutManager addTemporaryAttribute:value:forCharacterRange:] + 486
+	5   AppKit                              0x00007fff8952b924 -[NSTextView _markTextEditedForRange:] + 1119
+	6   AppKit                              0x00007fff89526443 -[NSTextView insertText:replacementRange:] + 2710
+	7   AppKit                              0x00007fff8955b177 -[NSTextView insertText:] + 324
+	8   libwx_osx_cocoau-3.0.0.0.0.dylib    0x0000000109550922 _ZN17wxWidgetCocoaImpl10insertTextEP8NSStringP6NSViewPv + 114
+	9   libwx_osx_cocoau-3.0.0.0.0.dylib    0x00000001095425b1 _ZN19wxNSTextViewControl9WriteTextERK8wxString + 257
+	10  libwx_osx_cocoau-3.0.0.0.0.dylib    0x00000001094aa4b3 _ZN11wxTextEntry9WriteTextERK8wxString + 67
+	11  _core_.so                           0x00000001090d5017 _wrap_TextEntryBase_AppendText + 199
+	12  Python                              0x0000000108a4312f PyEval_EvalFrameEx + 16242
+	13  Python                              0x0000000108a3f093 PyEval_EvalCodeEx + 1641
+	14  Python                              0x0000000108a458c8 _PyEval_SliceIndex + 929
+	15  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	16  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	17  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	18  Python                              0x0000000108a3f093 PyEval_EvalCodeEx + 1641
+	19  Python                              0x0000000108a458c8 _PyEval_SliceIndex + 929
+	20  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	21  Python                              0x0000000108a3f093 PyEval_EvalCodeEx + 1641
+	22  Python                              0x00000001089e6796 PyFunction_SetClosure + 809
+	23  Python                              0x00000001089c8f72 PyObject_Call + 101
+	24  _functools.so                       0x000000010a7df9a6 init_functools + 924
+	25  Python                              0x00000001089c8f72 PyObject_Call + 101
+	26  Python                              0x0000000108a42df5 PyEval_EvalFrameEx + 15416
+	27  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	28  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	29  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	30  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	31  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	32  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	33  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	34  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	35  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	36  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	37  Python                              0x0000000108a3f093 PyEval_EvalCodeEx + 1641
+	38  Python                              0x00000001089e6796 PyFunction_SetClosure + 809
+	39  Python                              0x00000001089c8f72 PyObject_Call + 101
+	40  Python                              0x00000001089d39a7 PyMethod_New + 1200
+	41  Python                              0x00000001089c8f72 PyObject_Call + 101
+	42  Python                              0x0000000108a4501f PyEval_CallObjectWithKeywords + 93
+	43  Python                              0x0000000108a6ffa5 initthread + 1546
+	44  libsystem_pthread.dylib             0x00007fff8774c899 _pthread_body + 138
+	45  libsystem_pthread.dylib             0x00007fff8774c72a _pthread_struct_init + 0
+	46  libsystem_pthread.dylib             0x00007fff87750fc9 thread_start + 13
+)
+2014-07-11 12:59:15.375 Python[8900:9a13] *** Terminating app due to uncaught exception 'NSRangeException', reason: 'NSMutableRLEArray replaceObjectsInRange:withObject:length:: Out of bounds'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x00007fff8c0ed25c __exceptionPreprocess + 172
+	1   libobjc.A.dylib                     0x00007fff936c0e75 objc_exception_throw + 43
+	2   CoreFoundation                      0x00007fff8c0ed10c +[NSException raise:format:] + 204
+	3   Foundation                          0x00007fff8accca05 -[NSMutableRLEArray replaceObjectsInRange:withObject:length:] + 140
+	4   AppKit                              0x00007fff894c9630 -[NSLayoutManager addTemporaryAttribute:value:forCharacterRange:] + 486
+	5   AppKit                              0x00007fff8952b924 -[NSTextView _markTextEditedForRange:] + 1119
+	6   AppKit                              0x00007fff89526443 -[NSTextView insertText:replacementRange:] + 2710
+	7   AppKit                              0x00007fff8955b177 -[NSTextView insertText:] + 324
+	8   libwx_osx_cocoau-3.0.0.0.0.dylib    0x0000000109550922 _ZN17wxWidgetCocoaImpl10insertTextEP8NSStringP6NSViewPv + 114
+	9   libwx_osx_cocoau-3.0.0.0.0.dylib    0x00000001095425b1 _ZN19wxNSTextViewControl9WriteTextERK8wxString + 257
+	10  libwx_osx_cocoau-3.0.0.0.0.dylib    0x00000001094aa4b3 _ZN11wxTextEntry9WriteTextERK8wxString + 67
+	11  _core_.so                           0x00000001090d5017 _wrap_TextEntryBase_AppendText + 199
+	12  Python                              0x0000000108a4312f PyEval_EvalFrameEx + 16242
+	13  Python                              0x0000000108a3f093 PyEval_EvalCodeEx + 1641
+	14  Python                              0x0000000108a458c8 _PyEval_SliceIndex + 929
+	15  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	16  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	17  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	18  Python                              0x0000000108a3f093 PyEval_EvalCodeEx + 1641
+	19  Python                              0x0000000108a458c8 _PyEval_SliceIndex + 929
+	20  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	21  Python                              0x0000000108a3f093 PyEval_EvalCodeEx + 1641
+	22  Python                              0x00000001089e6796 PyFunction_SetClosure + 809
+	23  Python                              0x00000001089c8f72 PyObject_Call + 101
+	24  _functools.so                       0x000000010a7df9a6 init_functools + 924
+	25  Python                              0x00000001089c8f72 PyObject_Call + 101
+	26  Python                              0x0000000108a42df5 PyEval_EvalFrameEx + 15416
+	27  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	28  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	29  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	30  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	31  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	32  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	33  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	34  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	35  Python                              0x0000000108a45864 _PyEval_SliceIndex + 829
+	36  Python                              0x0000000108a424d4 PyEval_EvalFrameEx + 13079
+	37  Python                              0x0000000108a3f093 PyEval_EvalCodeEx + 1641
+	38  Python                              0x00000001089e6796 PyFunction_SetClosure + 809
+	39  Python                              0x00000001089c8f72 PyObject_Call + 101
+	40  Python                              0x00000001089d39a7 PyMethod_New + 1200
+	41  Python                              0x00000001089c8f72 PyObject_Call + 101
+	42  Python                              0x0000000108a4501f PyEval_CallObjectWithKeywords + 93
+	43  Python                              0x0000000108a6ffa5 initthread + 1546
+	44  libsystem_pthread.dylib             0x00007fff8774c899 _pthread_body + 138
+	45  libsystem_pthread.dylib             0x00007fff8774c72a _pthread_struct_init + 0
+	46  libsystem_pthread.dylib             0x00007fff87750fc9 thread_start + 13
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+
+Process finished with exit code 134
