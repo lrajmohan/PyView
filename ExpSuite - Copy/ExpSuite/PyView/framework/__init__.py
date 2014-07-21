@@ -13,7 +13,7 @@ class Experiment(object):
     of an experiment paradigm. It consist of a sequence of intervals
     """    
     def __init__(self):
-        self.trialDuration = 30.0 #raj-changed from 1 to 30
+        self.trialDuration = 30.0 #raj- changed from 1 to 30
         """how long all the sequences last in seconds"""
         self.intervalList = [] 
         """list of intervals"""
@@ -32,7 +32,7 @@ class Experiment(object):
         
         self.autoRinse = False
         """ Automatically deliver water after a taste is delivered"""
-        self.rinseTime = 0.025 #raj- reverted to 0.025 from 0.22 after Lucinda fixed the valve
+        self.rinseTime = 0.025 #raj-reverted to 0.025 from 0.22 after Lucinda fixed the valve
         """ How long to deliver rinse for, in seconds"""
         self.rinseWait = 0.5
         """ intermission between reward delivery and rinse"""

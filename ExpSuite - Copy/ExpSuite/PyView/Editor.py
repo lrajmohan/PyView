@@ -11,7 +11,7 @@ import subprocess
 import CondTree as pine
 # global variables
 X = Experiment()
-#X.trialDuration = 30- #raj - added in framework/_init_.py
+#X.trialDuration = 30- #raj - added in Experiment class of framework/_init_.py
 ToneCount = 0
 choosenOnes = []
 """selected intervals and actions"""
