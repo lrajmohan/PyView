@@ -616,7 +616,7 @@ def bindExp():
             X.adjustPostIntTimes(self.interval)
             Frame.Graph.redraw_bars = True
             X.swiss.redraw_flag = True
-        #print "\t Increment by = %f \t NEW DURATION=%f \t Max Dur=%f"%(self.increment,newdur,X.intervalList[self.interval].maxDuration)
+        #  "\t Increment by = %f \t NEW DURATION=%f \t Max Dur=%f"%(self.increment,newdur,X.intervalList[self.interval].maxDuration)
         #X.intervalList[self.interval].duration
 
     def act_play(self):

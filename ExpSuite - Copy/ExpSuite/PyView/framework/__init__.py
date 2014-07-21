@@ -13,7 +13,7 @@ class Experiment(object):
     of an experiment paradigm. It consist of a sequence of intervals
     """    
     def __init__(self):
-        self.trialDuration = 30.0 #changed from 1 to 30
+        self.trialDuration = 30.0 #raj-changed from 1 to 30
         """how long all the sequences last in seconds"""
         self.intervalList = [] 
         """list of intervals"""
