@@ -1,9 +1,0 @@
-94.0112898219	Taste Delivery 
-95.2596998503	Taste Delivery 
-97.2626752398	Tone Delivery 
-99.4601890293	Taste Delivery 
-100.947264003	Taste Delivery 
-102.950341932	Tone Delivery 
-103.131240155	Taste Delivery 
-104.347233066	Taste Delivery 
-105.291223161	Taste Delivery 

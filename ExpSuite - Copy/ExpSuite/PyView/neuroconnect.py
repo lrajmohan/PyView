@@ -77,7 +77,8 @@ class RestartEventThread (Thread):
             r.write(0)
             r.stop()
             r.clear()
-        except RuntimeError:
+        except RuntimeError :
+            print "Run time error is:",RuntimeError
             print "UNABLE TO MARK RESTART"
             self.success= False
         

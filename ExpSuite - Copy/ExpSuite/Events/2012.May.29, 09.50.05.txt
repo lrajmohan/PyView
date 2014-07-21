@@ -1,7 +1,0 @@
-2.00939127002	Tone Delivery 
-11.7224359138	Taste Delivery 
-13.8440611722	Tone Delivery 
-15.5528964553	Taste Delivery 
-17.6756335476	Tone Delivery 
-20.9506985446	Taste Delivery 
-23.0661311992	Tone Delivery 

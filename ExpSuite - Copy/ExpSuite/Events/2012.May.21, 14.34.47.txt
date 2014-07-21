@@ -1,7 +1,0 @@
-79.3545800085	Tone Delivery 
-85.7492677915	Lever Press 
-85.7537844044	Taste Delivery 
-85.9420140538	Lever Press 
-87.7509077146	Tone Delivery 
-120.77728787	Taste Delivery 
-121.368894515	Taste Delivery 

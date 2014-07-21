@@ -1,6 +1,6 @@
 import math
 
-ToneNames = ['Freq1','Freq2','Freq3', 'Freq4']
+ToneNames = ['Freq.1','Freq.2','Freq.3', 'Freq.4']
 ToneFreq = [2000,4000,4200,8000]
 
 ttlMap = {'Lever Press': '00000200', 'Mark Time':'00000400','New Trial':'00000800', 'Pulse':'00001000',

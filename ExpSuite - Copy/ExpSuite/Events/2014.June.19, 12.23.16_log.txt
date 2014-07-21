@@ -1,4 +1,0 @@
-
-Experiment Begins .. Trial Duration: 12.0 seconds
-
-1.2831682965e-06 >>> preCue (Wait Interval) ENTERED 

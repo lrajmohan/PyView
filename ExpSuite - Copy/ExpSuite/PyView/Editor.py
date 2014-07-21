@@ -11,7 +11,7 @@ import subprocess
 import CondTree as pine
 # global variables
 X = Experiment()
-X.trialDuration = 30
+#X.trialDuration = 30- #raj - added in framework/_init_.py
 ToneCount = 0
 choosenOnes = []
 """selected intervals and actions"""
@@ -558,39 +558,26 @@ class CtrlPanel(wx.Panel):
             try:
                 d = int(self.freq1.GetValue())  #only numerical freq
                 uv.ToneFreq[0]=d
-                print 'tone freq1',uv.ToneFreq
             except ValueError:
                 print "Please enter a numeric Freq." #prompts to enter a numerical freq
     def updateFreq2(self,evt):
             try:
                 d = int(self.freq2.GetValue())
                 uv.ToneFreq[1]=d
-                print 'tone freq2',uv.ToneFreq
             except ValueError:
                 print "Please enter a numeric Freq."
     def updateFreq3(self,evt):
-            print self.Label
             try:
                 d = int(self.freq3.GetValue())
                 uv.ToneFreq[2]=d
-                print 'tone freq3',uv.ToneFreq
             except ValueError:
                 print "Please enter a numeric Freq."
     def updateFreq4(self,evt):
             try:
                 d = int(self.freq4.GetValue())
                 uv.ToneFreq[3]=d
-                print 'tone freq4',uv.ToneFreq
             except ValueError:
                 print "Please enter a numeric Freq."
-
-            '''if (self.freq4.GetValue()==''):
-                 print "Please enter a numeric Freq."
-                 pass
-            else:
-                d = int(self.freq4.GetValue())
-                uv.ToneFreq[3]=d
-                print 'tone freq4',uv.ToneFreq'''
 #raj- change ends
     def deleteSelected(self,evt):
         """delete selected items"""
@@ -982,8 +969,6 @@ class DialogTone(IntervalForm):
                 i=uv.ToneFreq.index(f)
             except ValueError,e:
                 er  = e
-               # print er
-               # pass
             else:
                 i = uv.ToneFreq.index(f)
                 self.toneField.Select(i)
@@ -1188,7 +1173,7 @@ class DialogTaste(ActionForm):
         self.tbl.Add(wx.StaticText(self, -1, desc), row=1, col=1, colspan=2)
         
         self.tbl.Add(wx.StaticText(self, -1, "Run Time"), row=6, col=1)
-        self.rtField = wx.TextCtrl(self,-1,value=str(0.22))  #raj- changed the value to 0.22 as per the requirement
+        self.rtField = wx.TextCtrl(self,-1,value=str(X.rinseTime))  #raj- reverted to 0.025 from 0.22 after Lucinda fixed the valve
         self.tbl.Add(self.rtField, row=6,col=2)
         
         self.tbl.Add(wx.StaticText(self, -1, "Associated Taste(s)"), row=7, col=1, flag=wx.ALIGN_TOP)

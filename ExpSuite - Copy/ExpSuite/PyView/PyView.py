@@ -156,13 +156,11 @@ class MainThread(Thread):
         while not(self.stop_flag):
             if flag['newTrial']:
                 count+=1 #raj-change- counting number of trials
-                #print 'Number of Trials are:',count
                 if Frame.Graph.trial ==1: #raj-change- getting the max value from the first trial
                       newMaxDuration = X.intervalList[0].maxDuration  #raj-change- getting the max value from the first trial
                       newRefreshDuration = X.intervalList[0].duration #raj - change
                 starti = "\n%s >>> %s (%s Interval) ENTERED \n"%(timer['total'], X.intervalList[derby].name,X.intervalList[derby].type)
                 log(starti)
-                #print "new trial at %f \n"%time.clock()
                 flag['newTrial'] = False
                 self.doBeginAction()
 
@@ -245,12 +243,6 @@ class MainThread(Thread):
                     perTrialTotalTime += X.intervalList[i].duration
             #if (trialTime)>X.trialDuration: #Before changing
             if (trialTime)>perTrialTotalTime:
-              #  print timer
-              #  print 'intervalList',X.intervalList
-              #  print 'iEnds',timer['iEnds'] #raj
-              #  print 'trial time', trialTime#raj
-              #  print 'trial duration',X.trialDuration#raj
-              #  print 'toataltime',perTrialTotalTime
                 startNewTrial()
             #raj-change ends here- making the jump when it reaches the end of the tone
             if X.terminator!=None and not(self.stop_flag):
@@ -595,7 +587,6 @@ def bindExp():
         t = timer['total'] - timer['start']
         p = {'time':t,'trials':Frame.Graph.trial,
              'rewards':counter['autoRewards'],'cc':counter['consecRewards']}
-        #print 'p in act_jump',p #raj
         yesJump = self.test(p)
         if not(yesJump):
             return
@@ -618,11 +609,9 @@ def bindExp():
             newdur += self.increment
         else:
             newdur *= self.increment
-       # print 'max duration ',X.intervalList[self.interval].maxDuration
         if Frame.Graph.trial >1: #raj-change- setting the max values for the following trials
            X.intervalList[self.interval].maxDuration = newMaxDuration  #raj-change #changing the max duration
         if newdur<=X.intervalList[self.interval].maxDuration and newdur>0:
-        #print 'inside the redraw flag'
             X.intervalList[self.interval].duration = newdur
             X.adjustPostIntTimes(self.interval)
             Frame.Graph.redraw_bars = True
