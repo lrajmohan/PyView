@@ -3,6 +3,7 @@ Intervals module
 
 """
 import random
+import Actions #raj
 class Interval(object):
     """Super class for interval objects
     
@@ -84,7 +85,9 @@ class ToneInt(Interval):
         """
         Interval.__init__(self,duration,name)
         self.type="Tone"
-        self.freq = 0
+        #self.freq = 0 #raj
+        self.freqType = "Donno" #raj
+        self.summa = 0
         """ Tone frequency in Hz. 
         Based on the current setup and scaling. Frequency range = [1000,11160] Hz"""
     
@@ -93,7 +96,8 @@ class ToneInt(Interval):
         """
         ln0 = Interval.toString(self)
         ln1 = "Tone Frequency = %d Hz \n"%self.freq
-        return ln0+ln1
+        ln2 = "freqType= %s"%self.freqType #raj-change for freq
+        return ln0+ln1+ln2 #raj- added ln2
 
 class RewardInt(Interval):
     """ If lever pressed during this interval we deliver taste 

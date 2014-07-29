@@ -1,11 +1,11 @@
 import math
 
-ToneNames = ['Freq.1','Freq.2','Freq.3', 'Freq.4']
+ToneNames = ['Freq 1','Freq 2','Freq 3', 'Freq 4']
 ToneFreq = [2000,4000,4200,8000]
 
 ttlMap = {'Lever Press': '00000200', 'Mark Time':'00000400','New Trial':'00000800', 'Pulse':'00001000',
           'Valve 1':'00000001','Valve 2':'00000002','Valve 3':'00000004','Valve 4':'00000008', 'Valve 5':'00000010',
-          'Freq1':'00000020','Freq2':'00000040','Freq3':'00000080', 'Freq4':'00000100'}
+          'Freq 1':'00000020','Freq 2':'00000040','Freq 3':'00000080', 'Freq 4':'00000100'}
 
 TasteNames = ['Valve 1','Valve 2','Valve 3', 'Valve 4','Valve 5']
 TasteColors= ["#6666FF","#c16fd6","#b73bd6","#ad08d6","#a55fb7"]

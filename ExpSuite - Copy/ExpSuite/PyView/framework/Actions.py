@@ -108,7 +108,7 @@ class Taste(Action):
     def __init__(self,name):
         Action.__init__(self,name)
         self.type="Taste"
-        self.runTime = 0.043
+        self.runTime  #raj- changed to match with rinse time - defined in init.py
         """lag time to deliver water from valve"""
         self.valves = []
         """ Available valves to deliver water from. If more than one is select,
@@ -146,6 +146,8 @@ class PlayTone(Action):
         self.name = name
         self.type="PlayTone"
         self.freq=1000
+        self.freqType = "Donno" #raj
+        self.summa = 0
         """ frequency: 1000 Hz - 11,160 Hz (default=1000) """
     
     def toString(self):

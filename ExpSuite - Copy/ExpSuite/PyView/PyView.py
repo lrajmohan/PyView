@@ -156,11 +156,13 @@ class MainThread(Thread):
         while not(self.stop_flag):
             if flag['newTrial']:
                 count+=1 #raj-change- counting number of trials
+                #print 'Number of Trials are:',count
                 if Frame.Graph.trial ==1: #raj-change- getting the max value from the first trial
                       newMaxDuration = X.intervalList[0].maxDuration  #raj-change- getting the max value from the first trial
                       newRefreshDuration = X.intervalList[0].duration #raj - change
                 starti = "\n%s >>> %s (%s Interval) ENTERED \n"%(timer['total'], X.intervalList[derby].name,X.intervalList[derby].type)
                 log(starti)
+                #print "new trial at %f \n"%time.clock()
                 flag['newTrial'] = False
                 self.doBeginAction()
 
@@ -243,6 +245,12 @@ class MainThread(Thread):
                     perTrialTotalTime += X.intervalList[i].duration
             #if (trialTime)>X.trialDuration: #Before changing
             if (trialTime)>perTrialTotalTime:
+              #  print timer
+              #  print 'intervalList',X.intervalList
+              #  print 'iEnds',timer['iEnds'] #raj
+              #  print 'trial time', trialTime#raj
+              #  print 'trial duration',X.trialDuration#raj
+              #  print 'toataltime',perTrialTotalTime
                 startNewTrial()
             #raj-change ends here- making the jump when it reaches the end of the tone
             if X.terminator!=None and not(self.stop_flag):
@@ -349,8 +357,10 @@ class MainFrame(wx.Frame):
 
     def doRefreshGraph(self,event):
         """ refresh graph"""
+
         X.intervalList[0].duration =newRefreshDuration #raj- added this to make the trial start appropriately
         self.Graph.initGraph()
+
 
     def doSaveGraph(self,event):
         """ save graph """
@@ -459,11 +469,22 @@ class MainFrame(wx.Frame):
             try:
                 ttlcode = uv.ttlMap[timeStamps[i][0]]
             except KeyError:
-                if timeStamps[i][0] in ('Taste Delivery','Tone Delivery'):
+                #changed as per the Tone delivery change
+                if timeStamps[i][0] in ('Taste Delivery'):
                     try:
-                        ttlcode = uv.ttlMap[timeStamps[i][2]]
+                        ttlcode = uv.ttlMap[timeStamps[i][2]] #raj
+
                     except KeyError:
                         pass
+
+                if timeStamps[i][0] in ('Tone Delivery'):  #raj- changes for freqType
+                    try:
+                        # ttlcode = uv.ttlMap[timeStamps[i][2]] #raj
+                        ttlcode = uv.ttlMap[timeStamps[i][3]] #raj - change for taste delivery also
+
+                    except KeyError:
+                        pass
+
             tx = timeStamps[i][1] - timer['t0']
             tempString = str(tx)+ '\t' +ttlcode + '\t % ' + str(timeStamps[i][0]) + '\t' +timeStamps[i][2] +'\n'
             f.write(tempString)
@@ -511,6 +532,8 @@ def startNewTrial(startAt=0):
         #elif not(i.changable) and i.duration != i.oriDur:
         #    i.duration = i.oriDur
         #    X.adjustPostIntTimes(inum)
+        i.varyDuration() # raj- the trial should come to starting point even if the varyby is not defined
+        X.adjustPostIntTimes(inum)
         Frame.CtrlPanel.iFields[inum].SetValue(str(i.duration))
         inum+=1
     if flag['correctRun']:
@@ -587,6 +610,7 @@ def bindExp():
         t = timer['total'] - timer['start']
         p = {'time':t,'trials':Frame.Graph.trial,
              'rewards':counter['autoRewards'],'cc':counter['consecRewards']}
+        #print 'p in act_jump',p #raj
         yesJump = self.test(p)
         if not(yesJump):
             return
@@ -609,14 +633,16 @@ def bindExp():
             newdur += self.increment
         else:
             newdur *= self.increment
+       # print 'max duration ',X.intervalList[self.interval].maxDuration
         if Frame.Graph.trial >1: #raj-change- setting the max values for the following trials
            X.intervalList[self.interval].maxDuration = newMaxDuration  #raj-change #changing the max duration
         if newdur<=X.intervalList[self.interval].maxDuration and newdur>0:
+        #print 'inside the redraw flag'
             X.intervalList[self.interval].duration = newdur
             X.adjustPostIntTimes(self.interval)
             Frame.Graph.redraw_bars = True
             X.swiss.redraw_flag = True
-        #  "\t Increment by = %f \t NEW DURATION=%f \t Max Dur=%f"%(self.increment,newdur,X.intervalList[self.interval].maxDuration)
+        #print "\t Increment by = %f \t NEW DURATION=%f \t Max Dur=%f"%(self.increment,newdur,X.intervalList[self.interval].maxDuration)
         #X.intervalList[self.interval].duration
 
     def act_play(self):
@@ -625,14 +651,16 @@ def bindExp():
         i = freq2int(self.freq)
         a = int2bi8(i)
         try:
-            di = uv.ToneFreq.index(self.freq)
+            #di = uv.ToneFreq.index(self.freq) #raj
+            di = uv.ToneNames.index(X.intervalList[derby].freqType) #raj  - changed to match with the freqType rather than freq which will be dynamically changing
         except IndexError:
             di = 0
         toneThread = neu.PlayToneThread(X.intervalList[derby].duration,a,di)
         #log text
         timer['toneAt'] = time.clock() - timer['t0']
         flag['tonePlayed'] = True
-        timeStamps.append( ('Tone Delivery',time.clock(),str(self.freq)+' Hz') )
+        #print "intervalListForDerby",X.intervalList[derby].toString()
+        timeStamps.append( ('Tone Delivery',time.clock(),str(self.freq)+' Hz', str(X.intervalList[derby].freqType)) ) #raj
         log('%s Tone \n'% round(timer['toneAt'],2) )
         self.performed = False
 

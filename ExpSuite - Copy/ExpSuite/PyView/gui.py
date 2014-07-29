@@ -113,6 +113,7 @@ class GraphPanel(wx.Panel):
         
         self.figure = Figure(dpi=100,figsize=(5,5.5))
         self.axes = self.figure.add_subplot(111)
+        print 'X.trial', X.trialDuration
         self.axes.axis([0,X.trialDuration,0,1.5])
         self.axes.set_xlabel('time (s)')
         
@@ -128,7 +129,7 @@ class GraphPanel(wx.Panel):
                          prop=LText, fancybox=True, bbox_to_anchor=(0., 1.02, 1., .102), loc=1, ncol=2, mode="expand", borderaxespad=0)
         
         self.canvas = FigureCanvas(self, -1, self.figure)
-    
+
     def clearGraph(self):
         """ clear graph"""
         self.figure.delaxes(self.axes)

@@ -13,9 +13,9 @@ class Experiment(object):
     of an experiment paradigm. It consist of a sequence of intervals
     """    
     def __init__(self):
-        self.trialDuration = 30.0 #raj- changed from 1 to 30
+        self.trialDuration = 30.0
         """how long all the sequences last in seconds"""
-        self.intervalList = [] 
+        self.intervalList = []
         """list of intervals"""
         self.actionList = []
         """list of all actions in experiment"""
@@ -32,10 +32,11 @@ class Experiment(object):
         
         self.autoRinse = False
         """ Automatically deliver water after a taste is delivered"""
-        self.rinseTime = 0.025 #raj-reverted to 0.025 from 0.22 after Lucinda fixed the valve
+        self.rinseTime = 0.025 #raj- changed the value to 0.025
         """ How long to deliver rinse for, in seconds"""
         self.rinseWait = 0.5
         """ intermission between reward delivery and rinse"""
+        Actions.Taste.runTime = self.rinseTime #raj- changed to match with the rinse time
 
         self.loadedfilename = '' #raj- stores the name of the file loaded
         """stores the name of the file loaded"""
@@ -44,9 +45,12 @@ class Experiment(object):
         Appends an Interval object to intervals list
         """
         ll=len(self.intervalList)
+        print 'intervalListin add interval',self.intervalList
+        print "ival::",str(ival)
         if ll>0:
             prev = self.intervalList[ll-1]
             ival.startTime = prev.startTime+prev.duration
+            print "ival::",str(ival)
         self.intervalList.append(ival)
         return ll
     
@@ -56,7 +60,7 @@ class Experiment(object):
         """
         txt = ""
         for i in self.intervalList:
-            txt+=i.toString()
+            txt+=i.fr()
         print txt
     
     def printAllActions(self):
@@ -183,15 +187,27 @@ def loadExperiment(filename):
 
         elif itype=="Tone":
             inter = Intervals.ToneInt(idur,iname)
+            act = Actions.PlayTone(iname) #raj
             opts = e.find('opt')
             try:
                 inter.freq = int(opts.get('freq'))
+                inter.freqType = str(opts.get('freqType')) #raj
+                #print "inter::",inter.toString()
+
+                #raj
+                '''act.freq = int(opts.get('freq'))
+                act.freqType = str(opts.get('freqType')) #raj
+                #Actions.PlayTone(opts.get('freq')).freqType = str(opts.get('freqType')) #raj '''
+                #raj
+
             except ValueError:
                 print pe+"freq as integer"
         elif itype=="Reward":
             inter = Intervals.RewardInt(idur,iname)
         elif itype=="Nogo":
             inter = Intervals.NogoInt(idur,iname)
+
+
         else:
             continue
         md = dure.get('max')
@@ -237,7 +253,6 @@ def loadExperiment(filename):
         except ValueError:
             print pe+"Interval.id as integer"
         E.intervalList.insert(idx,inter)
-
     # make Action lists
     actions = tree.find('actions')
     alist = []
@@ -265,6 +280,7 @@ def loadExperiment(filename):
             ta = e.find('valves')
             for t in list(ta):
                 act.valves.append(int(t.text))
+
         elif atype=="Jump":
             act = Actions.Jump(aname)
             opts = e.find('opt')
@@ -384,6 +400,7 @@ def saveExperiment(filename,exp):
         if i.type=="Tone":
             opt = elle.Element('opt')
             opt.set('freq',str(i.freq))
+            opt.set('freqType',str(i.freqType)) #raj - to determine the frequency type while saving
             node.append(opt)
         action = elle.Element('action')
         for k,v in i.actions.items():

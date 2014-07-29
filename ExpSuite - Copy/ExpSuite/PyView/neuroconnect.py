@@ -77,6 +77,7 @@ class RestartEventThread (Thread):
             r.write(0)
             r.stop()
             r.clear()
+            print "inside run::" #raj
         except RuntimeError :
             print "Run time error is:",RuntimeError
             print "UNABLE TO MARK RESTART"

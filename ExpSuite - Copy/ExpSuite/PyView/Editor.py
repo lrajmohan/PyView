@@ -11,7 +11,7 @@ import subprocess
 import CondTree as pine
 # global variables
 X = Experiment()
-#X.trialDuration = 30- #raj - added in Experiment class of framework/_init_.py
+#X.trialDuration = 30
 ToneCount = 0
 choosenOnes = []
 """selected intervals and actions"""
@@ -496,8 +496,8 @@ class CtrlPanel(wx.Panel):
         self.freq2 = wx.TextCtrl(self, size=(40, -1))
         self.freq2.SetValue(str(uv.ToneFreq[1]))
         self.Bind(wx.EVT_TEXT,self.updateFreq2,self.freq2)
-        freqGrid1.AddMany([wx.StaticText(self,-1,"FREQ.1"), self.freq1])
-        freqGrid1.AddMany([wx.StaticText(self,-1,"FREQ.2"), self.freq2])
+        freqGrid1.AddMany([wx.StaticText(self,-1,"Freq 1"), self.freq1])
+        freqGrid1.AddMany([wx.StaticText(self,-1,"Freq 2"), self.freq2])
         ss.Add(freqGrid1,row=1, col=3)
 
         freqGrid2 = wx.GridSizer(2,2,0,0)
@@ -507,8 +507,8 @@ class CtrlPanel(wx.Panel):
         self.freq4 = wx.TextCtrl(self, size=(40, -1))
         self.freq4.SetValue(str(uv.ToneFreq[3]))
         self.Bind(wx.EVT_TEXT,self.updateFreq4,self.freq4)
-        freqGrid2.AddMany([wx.StaticText(self,-1,"FREQ.3"), self.freq3])
-        freqGrid2.AddMany([wx.StaticText(self,-1,"FREQ.4"), self.freq4])
+        freqGrid2.AddMany([wx.StaticText(self,-1,"Freq 3"), self.freq3])
+        freqGrid2.AddMany([wx.StaticText(self,-1,"Freq 4"), self.freq4])
         ss.Add(freqGrid2,row=1, col=4)
 #raj- changes for freq text control  boxes ends (changes ends)
        # ss.Add(wx.StaticText(self, -1, "Freq1:"),row=1,col=3) #raj
@@ -558,26 +558,40 @@ class CtrlPanel(wx.Panel):
             try:
                 d = int(self.freq1.GetValue())  #only numerical freq
                 uv.ToneFreq[0]=d
+               # uv.ToneFreq[0] = "Freq 1"
+               # print 'tone freq1',uv.ToneFreq
             except ValueError:
                 print "Please enter a numeric Freq." #prompts to enter a numerical freq
     def updateFreq2(self,evt):
             try:
                 d = int(self.freq2.GetValue())
                 uv.ToneFreq[1]=d
+               # print 'tone freq2',uv.ToneFreq
             except ValueError:
                 print "Please enter a numeric Freq."
     def updateFreq3(self,evt):
+
             try:
                 d = int(self.freq3.GetValue())
                 uv.ToneFreq[2]=d
+            #    print 'tone freq3',uv.ToneFreq
             except ValueError:
                 print "Please enter a numeric Freq."
     def updateFreq4(self,evt):
             try:
                 d = int(self.freq4.GetValue())
                 uv.ToneFreq[3]=d
+             #   print 'tone freq4',uv.ToneFreq
             except ValueError:
                 print "Please enter a numeric Freq."
+
+            '''if (self.freq4.GetValue()==''):
+                 print "Please enter a numeric Freq."
+                 pass
+            else:
+                d = int(self.freq4.GetValue())
+                uv.ToneFreq[3]=d
+                print 'tone freq4',uv.ToneFreq'''
 #raj- change ends
     def deleteSelected(self,evt):
         """delete selected items"""
@@ -955,20 +969,23 @@ class DialogTone(IntervalForm):
             
         tonedesc = '''A Tone interval is a the period of time when a tone is played.
         While tone is playing, lever presses will be recorded but not rewarded'''
-        self.tbl.Add(wx.StaticText(self, -1, tonedesc), row=1, col=1, colspan=2)
+        self.tbl.Add(wx.StaticText(self, -1, tonedesc), row=1, col=1)
     
-        self.tbl.Add(wx.StaticText(self, -1, "Tone Played"), row=9, col=1)    
+        self.tbl.Add(wx.StaticText(self, -1, "Tone Played:"), row=8, col=2)     #raj- from (9,1)
         self.toneField = wx.Choice(self, -1, choices=uv.ToneNames)
         self.toneField.Select(0)
         self.tbl.Add(self.toneField, row=9, col=2)
         
         if self.act != None:
             f = self.act.freq
+
 #raj-changes made to handle the cases when we load an old xml and the freq is not matching with the present updated list of Freq.
             try:
                 i=uv.ToneFreq.index(f)
             except ValueError,e:
                 er  = e
+               # print er
+               # pass
             else:
                 i = uv.ToneFreq.index(f)
                 self.toneField.Select(i)
@@ -989,13 +1006,34 @@ class DialogTone(IntervalForm):
         if not(self.act):
             ti = Intervals.ToneInt(dur, name)
             ti.freq = uv.ToneFreq[self.toneField.GetSelection()]
+            #raj
+            if(self.toneField.GetSelection()==0):
+                 ti.freqType = 'Freq 1'
+            if(self.toneField.GetSelection()==1):
+                 ti.freqType = 'Freq 2'
+            if(self.toneField.GetSelection()==2):
+                 ti.freqType = 'Freq 3'
+            if(self.toneField.GetSelection()==3):
+                 ti.freqType = 'Freq 4'
+             #raj
             ind = X.addInterval(ti)
             self.Parent.timeline.addInterval(ind)
             self.act = X.intervalList[ind]
         else:
             self.act.name = name
             self.act.duration = dur
+  #raj- changes to make the Freq type get recorded
             self.act.freq = uv.ToneFreq[self.toneField.GetSelection()]
+            if(self.toneField.GetSelection()==0):
+                self.act.freqType = 'Freq 1'
+            if(self.toneField.GetSelection()==1):
+                self.act.freqType = 'Freq 2'
+            if(self.toneField.GetSelection()==2):
+                self.act.freqType = 'Freq 3'
+            if(self.toneField.GetSelection()==3):
+                self.act.freqType = 'Freq 4'
+            #print "self.act.freq",self.toneField.GetSelection() #raj
+  #raj-ends
             self.act.icon.ClearText()
             self.act.icon.AddText("%d Hz" % uv.ToneFreq[self.toneField.GetSelection()])
             IntervalForm.linkacts(self, evt)
@@ -1173,9 +1211,10 @@ class DialogTaste(ActionForm):
         self.tbl.Add(wx.StaticText(self, -1, desc), row=1, col=1, colspan=2)
         
         self.tbl.Add(wx.StaticText(self, -1, "Run Time"), row=6, col=1)
-        self.rtField = wx.TextCtrl(self,-1,value=str(X.rinseTime))  #raj- reverted to 0.025 from 0.22 after Lucinda fixed the valve
+        #self.rtField = wx.TextCtrl(self,-1,value=str(0.22))  #raj- changed the value to 0.22 as per the requirement
+        self.rtField = wx.TextCtrl(self,-1,value= str(X.rinseTime))  #raj- changed to match with the rinse time from init
         self.tbl.Add(self.rtField, row=6,col=2)
-        
+
         self.tbl.Add(wx.StaticText(self, -1, "Associated Taste(s)"), row=7, col=1, flag=wx.ALIGN_TOP)
         self.tastesField = wx.CheckListBox(self, -1, size=wx.DefaultSize, choices=uv.TasteNames)
         self.tastesField.SetInitialSize((100,50))
@@ -1456,26 +1495,21 @@ class DialogTrigger(FormDialog):
         
             for t in self.ion.triggerFor:
                 self.alist.append(t.name)
-            
-            for i in range(1,len(choosenOnes)):
-                if issubclass(choosenOnes[i].__class__, Actions.Action):
-                    self.alist.append(choosenOnes[i].name) 
-                    self.ion.triggerFor.append(choosenOnes[i])
-            
             self.ta = wx.ListBox(self,-1,choices=self.alist)
             self.tbl.Add(self.ta,row=4,col=1,rowspan=5)
-            
             mvUp = wx.Button(self,-1,label="Move Up")
             mvDn = wx.Button(self,-1,label="Move Down")
             rm = wx.Button(self,-1,label="Remove")
-            
-            self.tbl.AddMany([ (mvUp,0,0,0, 4, 2), (mvDn,0,0,0,5,2), (rm,0,0,0,6,2)])
+            trigger = wx.Button(self,-1,label="Trigger") #raj- added to make the triggering action more approapriate
+            self.tbl.AddMany([ (mvUp,0,0,0, 4, 2), (mvDn,0,0,0,5,2), (rm,0,0,0,6,2), (trigger,0,0,0,7,2)]) #raj - added trigger
             
             self.Bind(wx.EVT_BUTTON,self.onMvUp,mvUp)
             self.Bind(wx.EVT_BUTTON,self.onMvDn,mvDn)
             self.Bind(wx.EVT_BUTTON,self.onRm,rm)
+            self.Bind(wx.EVT_BUTTON,self.onTrigger,trigger) #raj - added trigger
             self.tbl.Fit(self)
             self.ShowModal()
+
         else:
             ErrorPopup('Make sure you select the triggering action first')
             return
@@ -1527,13 +1561,25 @@ class DialogTrigger(FormDialog):
         E.timeline.destroyLink(self.ion.icon, self.ion.triggerFor[sel].icon)
         self.ion.triggerFor.pop(sel)
         self.ta.SetItems(self.alist)
-    
-    def onSubmit(self,event):
+
+#raj - trigger funtion starts
+    def onTrigger(self,event):
+        for i in range(1,len(choosenOnes)):
+            if issubclass(choosenOnes[i].__class__, Actions.Action):
+                self.alist.append(choosenOnes[i].name)
+                self.ion.triggerFor.append(choosenOnes[i])
+                self.ta.Append(str(choosenOnes[i].name))
         for t in self.ion.triggerFor:
             try:
                 L = E.timeline.linesMap[(self.ion.icon,t.icon)]
             except KeyError:
                 E.timeline.makeLink(self.ion.icon, t.icon)
+
+
+       # self.Close()
+#raj - trigger funtion ends
+
+    def onSubmit(self,event): #modified this funtion as per the trigger action
         self.Close()
  
 class DialogCondition(FormDialog):
