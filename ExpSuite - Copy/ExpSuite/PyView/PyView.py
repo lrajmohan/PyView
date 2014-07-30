@@ -526,9 +526,9 @@ def startNewTrial(startAt=0):
     for i in X.intervalList:
         #if i.changable:
         #    continue
-        if i.vary:
-            i.varyDuration()
-            X.adjustPostIntTimes(inum)
+        #if i.vary:
+         #   i.varyDuration()
+          #  X.adjustPostIntTimes(inum)
         #elif not(i.changable) and i.duration != i.oriDur:
         #    i.duration = i.oriDur
         #    X.adjustPostIntTimes(inum)
@@ -628,7 +628,9 @@ def bindExp():
 
     #here is where the increment operation is performed
     def act_cid(self):
+
         newdur = X.intervalList[self.interval].duration
+        print 'X.intervalList',newdur
         if self.mode==0 :
             newdur += self.increment
         else:
